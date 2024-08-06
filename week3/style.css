@@ -1,5 +1,8 @@
 h3 {
-  color: aquamarine;
+  color: rgb(14, 108, 77);
+  font-family: "Luxurious Script", cursive;
+  font-weight: 800;
+  font-style: normal;
 }
 h4 {
   color: chartreuse;
@@ -23,4 +26,21 @@ h6 {
 p > strong {
   color: darkorange;
 }
+article {
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.9rem;
+    border: 2px dotted blue;
+    padding: 3px;
+}
+a:hover {
+    color:darkorange;
+    font-style: italic;
+}
+.button:hover {
+    color:darkorange;
+    font-style: italic;
+}
 /* p> stong {attributes and stuff} means go and find a <p></p> tag and then find a <strong></strong> tag and find the text within  the <strong></strong> and apply the atrribute to said text.*/
+/* Which ever style/css script comes later in the CSS script is applied.*/
+/*In the order of descending importance: id> Class > Elements > universal selectors.
