@@ -1,0 +1,26 @@
+h3 {
+  color: aquamarine;
+}
+h4 {
+  color: chartreuse;
+}
+
+* {
+  color: rgb(37, 17, 93);
+}
+
+.my-class {
+  color: rgb(38, 9, 73);
+}
+
+#my-i {
+  color: rgb(113, 14, 82);
+}
+h5,
+h6 {
+  color: darkgreen;
+}
+p > strong {
+  color: darkorange;
+}
+/* p> stong {attributes and stuff} means go and find a <p></p> tag and then find a <strong></strong> tag and find the text within  the <strong></strong> and apply the atrribute to said text.*/
