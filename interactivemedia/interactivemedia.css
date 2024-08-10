@@ -1,9 +1,55 @@
-ul {
+body {
+  background-color: #ffd6d8;
+  margin: 0; /* Should remove the margin around the header.*/
+}
+
+* {
+  color: #342d2d;
+}
+
+h1 {
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+b {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+i {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.header {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #342d2d;
+  position: fixed; /*Makes sure that the header is sticky.*/
+  top: 0;
+  width: 100%; /*Makes sure that the header spans the full width of the screem.*/
 }
 
 li {
@@ -14,11 +60,44 @@ li a {
   display: block;
   color: #ffd6d8;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 15px;
   text-decoration: none;
 }
 
 li a:hover {
   background-color: #d2a89d;
   color: #342d2d;
+}
+
+.active {
+  background-color: #d2a89d;
+}
+
+ul:not(.header) li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  float: none; /* Remove floating for the list items outside the navigation bar */
+  padding: 0px 0; /* Add padding to create space around the text */
+  margin: 0 0 10px 0; /* Add some bottom margin to create space between items */
+  width: auto; /* Allow the width to be determined by content */
+  clear: both; /* Ensure each list item starts on a new line */
+  box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+ol:not(.header) li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  float: none; /* Remove floating for the list items outside the navigation bar */
+  padding: 0px 0; /* Add padding to create space around the text */
+  margin: 0 0 10px 0; /* Add some bottom margin to create space between items */
+  width: auto; /* Allow the width to be determined by content */
+  clear: both; /* Ensure each list item starts on a new line */
+  box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+article {
+  padding-top: 40px;
 }
