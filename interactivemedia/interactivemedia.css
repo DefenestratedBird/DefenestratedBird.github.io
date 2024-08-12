@@ -7,6 +7,58 @@ body {
   color: #342d2d;
 }
 
+article {
+  padding-top: 40px;
+}
+
+.footer {
+  padding-bottom: 50px;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #342d2d;
+  color: white;
+  text-align: center;
+}
+
+.ftext {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+
+  color: #ffd6d8;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ftext:hover {
+  display: block;
+  padding: 14px 15px;
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: italic;
+
+  color: #9069dd;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+
 h1 {
   font-family: "Gupter", serif;
   font-weight: 700;
@@ -96,8 +148,4 @@ ol:not(.header) li {
   width: auto; /* Allow the width to be determined by content */
   clear: both; /* Ensure each list item starts on a new line */
   box-sizing: border-box; /* Ensures padding is included in the element's width */
-}
-
-article {
-  padding-top: 40px;
 }
