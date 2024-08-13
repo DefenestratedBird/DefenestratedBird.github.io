@@ -1,0 +1,27 @@
+body {
+  padding: 40px;
+  display: flex;
+}
+
+p {
+  border: 2px solid red;
+  width: 500px; /*makes the padding a skinny legend.*/
+  height: 150px; /*changes the height of the box.*/
+  line-height: 110px; /* For vertical centering.*/
+  text-align: center;
+  /*min-height: 50px; /*Basically min-height means that the gap between the two boxes is 50px at min, but if there's more text within the box, adjust the "box" according to the text in the box.*/
+  /*margin-bottom: 110px; /*Creates gaps between the two red boxes.*/
+  /*padding: 10px; /*Makes sure the text is socially distanced from the "frame."*/
+
+  padding: 20px;
+  margin: auto; /*To do horizontal centering, use the css thing on the left, or margin: 0 auto;*/
+  margin-right: 50px;
+  /*margin-bottom: 10px;*/
+  margin-top: 10px;
+}
+
+span {
+  font-weight: bold; /*The spans have been thicccened.*/
+  /*display: none; /* Hides the text within the <span> tags, later in Javascript, you will be using it to turn "display: none;" into "display: block;" to show hidden text when hovering it said text with your mouse.*/
+  /*display:block*/ /*This block will take up a new separate from other elements. Its a big boi.*/
+}
