@@ -25,3 +25,8 @@ span {
   /*display: none; /* Hides the text within the <span> tags, later in Javascript, you will be using it to turn "display: none;" into "display: block;" to show hidden text when hovering it said text with your mouse.*/
   /*display:block*/ /*This block will take up a new separate from other elements. Its a big boi.*/
 }
+
+.basic-home {
+  margin-right: 10px;
+  margin-left: -10px;
+}
