@@ -1,0 +1,206 @@
+body {
+  background-color: #ffd6d8;
+  margin: 0; /* Should remove the margin around the header.*/
+}
+
+* {
+  color: #342d2d;
+}
+
+article {
+  padding-top: 40px;
+}
+
+.footer {
+  padding-bottom: 50px;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #342d2d;
+  color: white;
+  text-align: center;
+}
+
+.ftext {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+
+  color: #ffd6d8;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ftext:hover {
+  display: block;
+  padding: 14px 15px;
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: italic;
+
+  color: #9069dd;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+
+h1 {
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 5px;
+}
+
+h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 5px;
+  margin-top: -2%;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px;
+}
+
+b {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 5px;
+}
+
+i {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 5px;
+}
+
+.header {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #342d2d;
+  position: fixed; /*Makes sure that the header is sticky.*/
+  top: 0;
+  width: 100%; /*Makes sure that the header spans the full width of the screem.*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffd6d8;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #d2a89d;
+  color: #342d2d;
+}
+
+.active {
+  background-color: #d2a89d;
+}
+
+ul:not(.header) li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  float: none;
+  padding: 0px 0;
+  margin: 0 0 10px 0;
+  width: auto;
+  clear: both;
+  box-sizing: border-box;
+}
+ol:not(.header) li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  float: none;
+  padding: 0px 0;
+  margin: 0 0 10px 0;
+  width: auto;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.weba {
+  text-decoration: none;
+  color: #ffd6d8;
+}
+
+.weblink {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+
+  background-color: #342d2d;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.weblink:hover {
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: normal;
+
+  background-color: #ffd6d8;
+  border: 2px solid;
+  color: #342d2d;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.weba:hover {
+  text-decoration: none;
+  color: #342d2d;
+}
