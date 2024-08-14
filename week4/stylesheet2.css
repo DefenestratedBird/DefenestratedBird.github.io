@@ -1,5 +1,41 @@
 /* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
 
+.header {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d5cea3;
+  position: fixed; /*Makes sure that the header is sticky.*/
+  top: 0;
+  width: 200%; /*Makes sure that the header spans the full width of the screem.*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #3c2a21;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3c2a21;
+  color: #d5cea3;
+}
+
+.active {
+  background-color: #d2a89d;
+}
+
 body {
   background-color: #1a120b;
   display: flex;
@@ -19,7 +55,7 @@ body {
 
 #grid-container {
   border: 2px dashed #e5e5cb;
-  margin: 50px 0;
+  margin: 60px 0;
   width: 500px;
   min-height: 500px;
   padding: 10px;
