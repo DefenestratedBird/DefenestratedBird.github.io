@@ -1,10 +1,17 @@
-/* A link will be provided on the website to my Style sheet of all the fonts & colours that I want to use
+/* This colour palette was initally inspired by the blue and green colour palette of the brooomstick.com website. The broomstick website
+had this sort of "pixel art/vintage" art background, so in a similar vein I wanted to create a somewhat vintage-looking website.
+
+A link will be provided on the website to my Style sheet of all the fonts & colours that I want to use
 Listed Below are my colour palette:
 --text: #252526;
 --background: #CCC5B4;
 --primary: #2E506E;
 --secondary: #4C5748;
 --accent: #7CC9BC;*/
+
+/* For my CSS styling of Assignment 1, I have decided to go for a newspaper styling as both to make use of the flexbox/gridbox skills
+that were taught to us in class. And also because the https://brooomstick.com/ website reminded me of an acutal magazine,
+so I decided to go for a similar physical media feel assignment 1. */
 
 body {
   background-color: #ccc5b4;
@@ -15,19 +22,15 @@ body {
   color: #342d2d;
 }
 
-article {
-  padding-top: 40px;
-}
-
 #grid-container {
   margin: 0;
   width: 100;
-  min-height: 400px;
+  height: 155px;
   padding: 10px;
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr; /*Gives two column "table" layout, +1fr to add more colmuns to the "table."*/
-  grid-template-rows: 1fr 1fr 1fr 1fr; /*Same but for rows.*/
+  grid-template-rows: 1fr 1fr; /*Same but for rows.*/
 }
 
 #box1 {
@@ -47,7 +50,7 @@ article {
   display: flex;
   align-items: flex-start;
   gap: 8rem;
-  margin-top: -2.2rem;
+  margin-top: -4rem;
 }
 
 #box3 {
@@ -114,6 +117,7 @@ h1 {
   font-family: "UnifrakturMaguntia", system-ui;
   font-weight: 400;
   font-style: normal;
+  font-size: 55px;
 }
 
 h2 {
@@ -150,160 +154,114 @@ i {
   font-style: italic;
 }
 
-/*.footer {
-  padding-bottom: 50px;
+#grid-container-body {
+  margin: 10px;
+  column-gap: 10rem;
+  width: 100;
+  min-height: 500px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*Gives two column "table" layout, +1fr to add more colmuns to the "table."*/
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*Same but for rows.*/
+}
 
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #342d2d;
-  color: white;
-  text-align: center;
+#box6 {
+  background-color: #f8ae00;
+  border: 2px solid #252526;
+  grid-row: 1/12;
+  grid-column: 2/4;
+}
+
+#box7 {
+  background-color: #63e716;
+  border: 2px solid #252526;
+  grid-row: 12/23;
+  grid-column: 2/3;
+}
+
+#box8 {
+  background-color: #2b1dc6;
+  border: 2px solid #252526;
+  grid-row: 12/23;
+  grid-column: 3/4;
+}
+
+#box9 {
+  background-color: #00c3f4;
+  border: 2px solid #252526;
+  grid-row: 1/23;
+  grid-column: 1/2;
+}
+
+#box10 {
+  background-color: #ff00c8;
+  border: 2px solid #252526;
+  grid-row: 1/23;
+  grid-column: 4/5;
+}
+
+#box11 {
+  background-color: #d8ea0e;
+  border: 2px solid #252526;
+  grid-row: 23/35;
+  grid-column: 1/2;
+}
+
+#box12 {
+  background-color: #ff3c00;
+  border: 2px solid #252526;
+  grid-row: 23/35;
+  grid-column: 2/3;
+}
+
+#box13 {
+  background-color: #ff3c00;
+  border: 2px solid #252526;
+  grid-row: 23/35;
+  grid-column: 3/4;
+}
+
+#box14 {
+  background-color: #ff3c00;
+  border: 2px solid #252526;
+  grid-row: 23/35;
+  grid-column: 4/5;
+}
+
+.footer {
+  border-top: 2px solid #252526;
+  margin: 10px;
+  width: 100;
+  height: 60px;
+  display: flex;
+
+  /*justify-content: flex-end*/
+  justify-content: center;
+  /*justify-content: space-between;*/
+
+  align-items: center;
+  /*align-items: ;*/
+
+  gap: 10px;
+}
+
+.back-to-top {
+  display: flex;
+  padding: 10px;
 }
 
 .ftext {
-  font-family: "Gupter", serif;
-  font-weight: 500;
-  font-style: normal;
-
-  color: #ffd6d8;
-  position: fixed;
-  bottom: 5px;
-  right: 0px;
-  left: 0px;
-  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
+
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .ftext:hover {
-  display: block;
-  padding: 14px 15px;
-  font-family: "Gupter", serif;
-  font-weight: 700;
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: italic;
-
-  color: #9069dd;
-  position: fixed;
-  bottom: 5px;
-  right: 0px;
-  left: 0px;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
 }
-
-.show {
-  display: block;
-}*/
-
-/*.header {
-  font-family: "Gupter", serif;
-  font-weight: 500;
-  font-style: normal;
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #342d2d;
-  position: fixed; /*Makes sure that the header is sticky.*/
-/*top: 0;
-  width: 100%; /*Makes sure that the header spans the full width of the screem.}*/
-
-/*
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #ffd6d8;
-  text-align: center;
-  padding: 14px 15px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #d2a89d;
-  color: #342d2d;
-}
-
-.active {
-  background-color: #d2a89d;
-}
-
-ul:not(.header) li {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
-  float: none;
-  padding: 0px 0;
-  margin: 0 0 10px 0;
-  width: auto;
-  clear: both;
-  box-sizing: border-box;
-}
-ol:not(.header) li {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
-  float: none;
-  padding: 0px 0;
-  margin: 0 0 10px 0;
-  width: auto;
-  clear: both;
-  box-sizing: border-box;
-}
-
-.weba {
-  text-decoration: none;
-  color: #ffd6d8;
-}
-
-.weblink {
-  font-family: "Gupter", serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: medium;
-
-  background-color: #342d2d;
-  border: none;
-  color: white;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0px 10px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-.weblink:hover {
-  font-family: "Gupter", serif;
-  font-weight: 700;
-  font-style: normal;
-
-  background-color: #ffd6d8;
-  border: 2px solid;
-  color: #342d2d;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0px 10px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-.weba:hover {
-  text-decoration: none;
-  color: #342d2d;
-}*/
