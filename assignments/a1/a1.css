@@ -1,5 +1,13 @@
+/* A link will be provided on the website to my Style sheet of all the fonts & colours that I want to use
+Listed Below are my colour palette:
+--text: #252526;
+--background: #CCC5B4;
+--primary: #2E506E;
+--secondary: #4C5748;
+--accent: #7CC9BC;*/
+
 body {
-  background-color: #ffd6d8;
+  background-color: #ccc5b4;
   margin: 0; /* Should remove the margin around the header.*/
 }
 
@@ -11,7 +19,112 @@ article {
   padding-top: 40px;
 }
 
-.footer {
+#grid-container {
+  margin: 0;
+  width: 100;
+  min-height: 400px;
+  padding: 10px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*Gives two column "table" layout, +1fr to add more colmuns to the "table."*/
+  grid-template-rows: 1fr 1fr 1fr 1fr; /*Same but for rows.*/
+}
+
+#box1 {
+  background-color: #ccc5b4;
+  border: 2px solid #252526;
+}
+#box2 {
+  background-color: #ccc5b4;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box3 {
+  background-color: aquamarine;
+}
+#box4 {
+  background-color: coral;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  height: 38px;
+}
+
+.outer {
+  border: 2px dashed #e5e5cb;
+  width: 100;
+  height: 35px;
+  display: flex;
+
+  /*justify-content: flex-end*/
+  /*justify-content: center;*/
+  justify-content: center;
+
+  align-items: center;
+  /*align-items: ;*/
+
+  gap: 10px;
+}
+
+.limebox {
+  background-color: limegreen;
+  padding: 10px;
+  flex: 1;
+}
+
+.coralbox {
+  background-color: coral;
+  padding: 10px;
+  flex: 1; /*Hmmmmm my flexboxes are ever so slightly off centred. :) */
+}
+
+.plumbox {
+  background-color: plum;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "UnifrakturMaguntia", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Pathway Gothic One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Spectral", system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+p {
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+b {
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+i {
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*.footer {
   padding-bottom: 50px;
 
   position: fixed;
@@ -57,45 +170,9 @@ article {
 
 .show {
   display: block;
-}
+}*/
 
-h1 {
-  font-family: "Gupter", serif;
-  font-weight: 700;
-  font-style: normal;
-  margin-left: 5px;
-}
-
-h2 {
-  font-family: "Tangerine", cursive;
-  font-weight: 500;
-  font-style: normal;
-  margin-left: 5px;
-  margin-top: -2%;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 5px;
-}
-
-b {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  margin: 5px;
-}
-
-i {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  margin: 5px;
-}
-
-.header {
+/*.header {
   font-family: "Gupter", serif;
   font-weight: 500;
   font-style: normal;
@@ -106,10 +183,10 @@ i {
   overflow: hidden;
   background-color: #342d2d;
   position: fixed; /*Makes sure that the header is sticky.*/
-  top: 0;
-  width: 100%; /*Makes sure that the header spans the full width of the screem.*/
-}
+/*top: 0;
+  width: 100%; /*Makes sure that the header spans the full width of the screem.}*/
 
+/*
 li {
   float: left;
 }
@@ -203,4 +280,4 @@ ol:not(.header) li {
 .weba:hover {
   text-decoration: none;
   color: #342d2d;
-}
+}*/
