@@ -212,13 +212,13 @@ i {
 }
 
 #box6 {
-  background-color: green;
-  /*this is the image*/
+  background: #f8ae00;
+  border: 2px solid #252526;
   grid-row: 1/12;
   grid-column: 2/4;
 }
 
-.photo {
+/*.photo {
   position: relative;
   overflow: hidden;
   margin-bottom: -10px;
@@ -231,9 +231,9 @@ i {
   display: block;
   align-items: center;
 
-  padding: 0px;
+  /*padding: 0px;
   margin: 0px;
-}
+}*/
 
 #box7 {
   /*Second column on the top, from left.*/
@@ -265,12 +265,13 @@ i {
 }
 
 #box11 {
-  /*Image*/
+  background-color: #d8ea0e;
+  border: 2px solid #252526;
   grid-row: 23/35;
   grid-column: 1/2;
 }
 
-.photo-2 {
+/*.photo-2 {
   position: relative;
   overflow: hidden;
 }
@@ -282,8 +283,8 @@ i {
   display: block;
 
   /*padding: 0px;
-  margin: 0px;*/
-}
+  margin: 0px;
+}*/
 
 #box12 {
   /*First text column from the left, bottom.*/
