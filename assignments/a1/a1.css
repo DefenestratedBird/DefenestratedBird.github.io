@@ -261,8 +261,6 @@ i {
 }
 
 #box11 {
-  background-color: #d8ea0e;
-  border: 2px solid #252526;
   grid-row: 23/35;
   grid-column: 1/2;
 }
