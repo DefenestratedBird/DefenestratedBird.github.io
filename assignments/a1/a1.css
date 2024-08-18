@@ -218,7 +218,7 @@ i {
   grid-column: 2/4;
 }
 
-/*.photo {
+.photo {
   position: relative;
   overflow: hidden;
   margin-bottom: -10px;
@@ -232,8 +232,8 @@ i {
   align-items: center;
 
   /*padding: 0px;
-  margin: 0px;
-}*/
+  margin: 0px;*/
+}
 
 #box7 {
   /*Second column on the top, from left.*/
@@ -271,7 +271,7 @@ i {
   grid-column: 1/2;
 }
 
-/*.photo-2 {
+.photo-2 {
   position: relative;
   overflow: hidden;
 }
@@ -283,8 +283,8 @@ i {
   display: block;
 
   /*padding: 0px;
-  margin: 0px;
-}*/
+  margin: 0px;*/
+}
 
 #box12 {
   /*First text column from the left, bottom.*/
