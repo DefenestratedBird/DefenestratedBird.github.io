@@ -212,8 +212,6 @@ i {
 }
 
 #box6 {
-  background: #f8ae00;
-  border: 2px solid #252526;
   grid-row: 1/12;
   grid-column: 2/4;
 }
@@ -237,8 +235,6 @@ i {
 
 #box7 {
   /*Second column on the top, from left.*/
-  background-color: aqua;
-  border-right: 2px solid #252526;
   grid-row: 12/23;
   grid-column: 2/3;
 }
