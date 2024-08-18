@@ -231,18 +231,17 @@ i {
   column-gap: 1rem;
   row-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #box6 {
-  grid-row: 1/12;
+  grid-row: 1/6;
   grid-column: 2/4;
 }
 
 .photo {
   position: relative;
   overflow: hidden;
-  margin-bottom: -10px;
 }
 
 .photo img {
@@ -250,42 +249,36 @@ i {
   height: auto;
   object-fit: cover;
   display: block;
-  align-items: center;
-
-  /*padding: 0px;
-  margin: 0px;*/
+  padding: 0px;
+  margin: 0px;
 }
 
 #box7 {
   /*Second column on the top, from left.*/
-  border-right: 1px dashed #252526;
-  grid-row: 12/23;
+  grid-row: 6/23;
   grid-column: 2/3;
 }
 
 #box8 {
   /*Third column on the top, from left.*/
-  border-right: 1px dashed #252526;
-  grid-row: 12/23;
+  grid-row: 6/20;
   grid-column: 3/4;
 }
 
 #box9 {
   /*First column on the top, from left.*/
-  border-right: 1px dashed #252526;
   grid-row: 1/23;
   grid-column: 1/2;
 }
 
 #box10 {
   /*Last column on the top, from left.*/
-  border-right: 1px dashed #252526;
   grid-row: 1/23;
   grid-column: 4/5;
 }
 
 #box11 {
-  grid-row: 23/35;
+  grid-row: 14/26;
   grid-column: 1/2;
 }
 
@@ -299,29 +292,23 @@ i {
   height: auto;
   object-fit: cover;
   display: block;
-
-  /*padding: 0px;
-  margin: 0px;*/
 }
 
 #box12 {
   /*First text column from the left, bottom.*/
-  border-right: 1px dashed #252526;
-  grid-row: 23/35;
+  grid-row: 13/25;
   grid-column: 2/3;
 }
 
 #box13 {
   /*Second text column from the left, bottom.*/
-  border-right: 1px dashed #252526;
-  grid-row: 23/35;
+  grid-row: 13/25;
   grid-column: 3/4;
 }
 
 #box14 {
   /*Last text column from the left, bottom.*/
-  border-right: 1px dashed #252526;
-  grid-row: 23/35;
+  grid-row: 13/25;
   grid-column: 4/5;
 }
 
