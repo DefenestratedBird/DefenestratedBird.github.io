@@ -147,8 +147,8 @@ p {
   font-size: 12.8px;
   text-align: justify;
 
-  /*margin-left: 5px;
-  margin-right: 5px;*/
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 ol {
@@ -206,11 +206,14 @@ i {
   min-height: 500px;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /*Gives two column "table" layout, +1fr to add more colmuns to the "table."*/
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*Same but for rows.*/
+  row-gap: 0rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #box6 {
+  background-color: green;
+  /*this is the image*/
   grid-row: 1/12;
   grid-column: 2/4;
 }
@@ -218,6 +221,7 @@ i {
 .photo {
   position: relative;
   overflow: hidden;
+  margin-bottom: -10px;
 }
 
 .photo img {
@@ -225,36 +229,43 @@ i {
   height: auto;
   object-fit: cover;
   display: block;
+  align-items: center;
 
   padding: 0px;
   margin: 0px;
 }
 
 #box7 {
-  /*border: 2px solid #252526;*/
+  /*Second column on the top, from left.*/
+  background-color: aqua;
+  border-right: 2px solid #252526;
   grid-row: 12/23;
   grid-column: 2/3;
 }
 
 #box8 {
+  /*Third column on the top, from left.*/
   /*border: 2px solid #252526;*/
   grid-row: 12/23;
   grid-column: 3/4;
 }
 
 #box9 {
+  /*First column on the top, from left.*/
   /*border: 2px solid #252526;*/
   grid-row: 1/23;
   grid-column: 1/2;
 }
 
 #box10 {
+  /*Last column on the top, from left.*/
   /*border: 2px solid #252526;*/
   grid-row: 1/23;
   grid-column: 4/5;
 }
 
 #box11 {
+  /*Image*/
   grid-row: 23/35;
   grid-column: 1/2;
 }
@@ -275,18 +286,21 @@ i {
 }
 
 #box12 {
+  /*First text column from the left, bottom.*/
   /*border: 2px solid #252526;*/
   grid-row: 23/35;
   grid-column: 2/3;
 }
 
 #box13 {
+  /*Second text column from the left, bottom.*/
   /*border: 2px solid #252526;*/
   grid-row: 23/35;
   grid-column: 3/4;
 }
 
 #box14 {
+  /*Last text column from the left, bottom.*/
   /*border: 2px solid #252526;*/
   grid-row: 23/35;
   grid-column: 4/5;
