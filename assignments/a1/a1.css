@@ -35,11 +35,14 @@ body {
 
 #box1 {
   background-color: #ccc5b4;
-  border: 2px solid #252526;
 }
 
-.hdetail {
+.htagline {
   text-align: center;
+  margin-top: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
 }
 
 #box2 {
@@ -59,8 +62,22 @@ body {
 }
 
 #box3 {
-  background-color: aquamarine;
 }
+
+.header-RText {
+  margin-top: 59px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.htext-main {
+  line-height: 12.5px;
+  text-align: right;
+  font-size: 16px;
+
+  margin-top: -10px;
+}
+
 #box4 {
   background-color: #ccc5b4;
   grid-column: 1/5;
@@ -204,7 +221,9 @@ i {
 }
 
 #grid-container-body {
-  margin: 10px;
+  margin-top: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
   column-gap: 10rem;
   width: 100;
   min-height: 500px;
