@@ -6,10 +6,10 @@ Listed Below are my colour palette:
 --text: #252526;
 --background: #CCC5B4;
 --primary: #2E506E;
---secondary: #4C5748;
+--secondary: #8CD4C3;
 --accent: #7CC9BC;*/
 
-/* For my CSS styling of Assignment 1, I have decided to go for a newspaper styling as both to make use of the flexbox/gridbox skills
+/* For my CSS styling of Assignment 1, I have tried to go for a newspaper styling as both to make use of the flexbox/gridbox skills
 that were taught to us in class. And also because the https://brooomstick.com/ website reminded me of an acutal magazine,
 so I decided to go for a similar physical media feel assignment 1. */
 
@@ -112,6 +112,8 @@ body {
 }
 
 .links:hover {
+  color: #2e506e;
+
   font-family: "EB Garamond", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -133,6 +135,9 @@ body {
   background-color: #ccc5b4;
   padding: 10px;
 }
+
+/*For the Typescale, I went with 1.250 - Major Third on this https://typescale.com/ website, 
+was a fast & loose with my paragraph font size "12.8px~16px" but I did end up sticking roughly to the Typescale rules.*/
 
 h1 {
   font-family: "UnifrakturMaguntia", system-ui;
@@ -170,6 +175,23 @@ p {
 
   margin-left: 0px;
   margin-right: 15px;
+}
+
+.def {
+  text-decoration: none;
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.def:hover {
+  color: #2e506e;
+
+  font-family: "EB Garamond", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
 }
 
 ol {
@@ -319,12 +341,8 @@ i {
   height: 60px;
   display: flex;
 
-  /*justify-content: flex-end*/
   justify-content: center;
-  /*justify-content: space-between;*/
-
   align-items: center;
-  /*align-items: ;*/
 
   gap: 10px;
 }
