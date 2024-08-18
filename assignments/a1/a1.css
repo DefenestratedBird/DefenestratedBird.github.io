@@ -211,11 +211,26 @@ i {
 }
 
 #box6 {
-  background-color: #f8ae00;
+  background: #f8ae00;
   border: 2px solid #252526;
   grid-row: 1/12;
   grid-column: 2/4;
 }
+
+/*.photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+
+  /*padding: 0px;
+  margin: 0px;
+}*/
 
 #box7 {
   /*border: 2px solid #252526;*/
@@ -247,6 +262,21 @@ i {
   grid-row: 23/35;
   grid-column: 1/2;
 }
+
+/*.photo-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+
+  /*padding: 0px;
+  margin: 0px;
+}*/
 
 #box12 {
   /*border: 2px solid #252526;*/
