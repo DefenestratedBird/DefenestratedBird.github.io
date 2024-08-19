@@ -1,0 +1,26 @@
+/*HTML Code From Luohan Chen.*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  border: 1px solid red;
+}
+
+.content3 {
+  margin: 2%;
+  padding: 10%;
+  font-size: 20px;
+}

@@ -15,7 +15,7 @@ so I decided to go for a similar physical media feel assignment 1. */
 
 body {
   background-color: #ccc5b4;
-  margin: 0; /* Should remove the margin around the header.*/
+  margin: 0;
 }
 
 * {
@@ -29,8 +29,7 @@ body {
   padding: 10px;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /*Gives two column "table" layout, +1fr to add more colmuns to the "table."*/
-  grid-template-rows: 1fr 1fr; /*Same but for rows.*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #box1 {
@@ -62,6 +61,7 @@ body {
 }
 
 #box3 {
+  background-color: #ccc5b4;
 }
 
 .header-RText {
@@ -92,12 +92,8 @@ body {
   height: 35px;
   display: flex;
 
-  /*justify-content: flex-end*/
-  /*justify-content: center;*/
   justify-content: center;
-
   align-items: center;
-  /*align-items: ;*/
 
   gap: 50px;
 }

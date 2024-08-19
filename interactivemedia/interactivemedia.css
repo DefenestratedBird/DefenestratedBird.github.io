@@ -59,6 +59,35 @@ article {
   display: block;
 }
 
+/*ul:is(article) li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #342d2d;
+}
+
+ol:is(article) li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #342d2d;
+}*/
+
+.dotlink {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #342d2d;
+  margin-left: -835px;
+}
+
+.dotlink:hover {
+  background-color: #ffd6d8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 h1 {
   font-family: "Gupter", serif;
   font-weight: 700;
