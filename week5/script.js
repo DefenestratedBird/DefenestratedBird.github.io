@@ -18,28 +18,27 @@ console.log(count);
 let isItRaining = false;
 console.log(isItRaining);
 if (isItRaining) {
-console.log("Please bring umbrella");
-}
-else {
-console.log("No need for umbrella");
+  console.log("Please bring umbrella");
+} else {
+  console.log("No need for umbrella");
 }
 
 let isitOARTClass = true;
 console.log(isitOARTClass);
 
-if(studentRecord.amIDesignStudent === true) {
-console.log("Welcome to the class.")
-}
-else {
-console.log("Sorry you are in the wrong class.");
+if (studentRecord.amIDesignStudent === true) {
+  console.log("Welcome to the class.");
+} else {
+  console.log("Sorry you are in the wrong class.");
 }
 
 const studentRecord = {
-name: "Lanchu",
-id: 4007083,
-class: "OART1013"
-amIScienceStudent: false,
-amIDesignStudent: true,};
+  name: "Lanchu",
+  id: 4007083,
+  class: "OART1013",
+  amIScienceStudent: false,
+  amIDesignStudent: true,
+};*
 
 console.log(studentRecord.name);
 console.log(studentRecord.name, "is a", studentRecord.class, "student");
