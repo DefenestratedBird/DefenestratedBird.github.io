@@ -9,6 +9,7 @@ body {
 
 article {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer {
@@ -59,7 +60,7 @@ article {
   display: block;
 }
 
-/*ul:is(article) li {
+*ul:is(article) li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -71,9 +72,8 @@ ol:is(article) li {
   font-weight: 400;
   font-style: normal;
   color: #342d2d;
-}*/
-
-.dotlink {
+}
+*/ .dotlink {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;

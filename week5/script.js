@@ -17,16 +17,29 @@ console.log(count);
 //boolean variable
 let isItRaining = false;
 console.log(isItRaining);
+if (isItRaining) {
+    console.log("Please bring umbrella");
+} 
+else {
+    console.log("No need for umbrella");
+}
+
 let isitOARTClass = true;
 console.log(isitOARTClass);
 
-//const studentRecord = {
-//name: "Lanchu",
-//id: 4007083,
-//class: "OART1013"
-//amIScienceStudent: false,
-//amIDesignStudent: true,
-//};
+if(studentRecord.amIDesignStudent === true) {
+    console.log("Welcome to the class.")
+}
+else {
+    console.log("Sorry you are in the wrong class.")
+}
+
+const studentRecord = {
+name: "Lanchu",
+id: 4007083,
+class: "OART1013"
+amIScienceStudent: false,
+amIDesignStudent: true,};
 
 //console.log(studentRecord.name);
 //console.log(studentRecord.name, "is a", studentRecord.class, "student");
@@ -35,3 +48,4 @@ console.log(isitOARTClass);
 let studentNames = ["Robert", "Alice", "Frank", "Bob", "Tom"];
 console.log(studentNames);
 console.log(studentNames[3]);
+
