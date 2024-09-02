@@ -8,8 +8,8 @@ body {
 }
 
 article {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .footer {
@@ -73,7 +73,7 @@ ol:is(article) li {
   font-style: normal;
   color: #342d2d;
 }
-*/ .dotlink {
+*.dotlink {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -92,37 +92,47 @@ h1 {
   font-family: "Gupter", serif;
   font-weight: 700;
   font-style: normal;
+  font-size: xx-large;
   margin-left: 5px;
 }
 
 h2 {
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+
+h3 {
   font-family: "Tangerine", cursive;
   font-weight: 500;
   font-style: normal;
-  margin-left: 5px;
-  margin-top: -2%;
-  font-size: large;
+  margin-left: 10px;
+  margin-bottom: -10px;
+  margin-top: 5px;
+  font-size: larger;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin: 5px;
+  margin-left: 15px;
 }
 
 b {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin: 5px;
+  margin-bottom: -10px;
 }
 
 i {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: italic;
-  margin: 5px;
+  margin-bottom: -10px;
 }
 
 .header {
@@ -165,6 +175,7 @@ ul:not(.header) li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: -10px;
 
   float: none; /* Remove floating for the list items outside the navigation bar */
   padding: 0px 0; /* Add padding to create space around the text */
@@ -177,6 +188,7 @@ ol:not(.header) li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: -10px;
 
   float: none; /* Remove floating for the list items outside the navigation bar */
   padding: 0px 0; /* Add padding to create space around the text */

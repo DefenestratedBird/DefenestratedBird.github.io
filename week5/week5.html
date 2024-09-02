@@ -84,11 +84,60 @@
         </ul>
       </ul>
       <h2>Conditional:</h2>
+      <h3>Comparison Operators:</h3>
       <p>
+        Let x=5. y="5".
         <ul>
-            <li>if (condition 1 && condition 2)</li>
+          <li>"==" Equals to/Loose Equality:</li>
+          <ul>
+            <li>"==" in Javascript compares the value of the variables on each side of the == sign.</li>
+            <li>So x==y is true.</li>
             <ul>
-                <li>If condition 1 AND condition 2 are true you excute the action within { }.</li>
+              <li>
+                To crudely put it "==" does not give a fck if x and y are not the same variable types.
+              </li>
+            </ul>
+            <li>And x==8 is false.</li>
+          </ul>
+          <li>"===" Strictly Equals To:</li>
+          <ul>
+            <li>"===" Compares both the variable value & the variable type.</li>
+            <li>So x===y is false.</li>
+            <ul>
+              <li>x is a number variable.</li>
+              <li>Whereas y is a string value.</li>
+            </ul>
+          </ul>
+          <li>"!=" Not equal to:</li>
+          <ul>
+            <li>Does not care about the type of the two values.</li>
+            <li>x!=8, True.</li>
+          </ul>
+          <li>"!===" Strict Not equal to:</li>
+          <ul>
+            <li>Same thing as "!=" but its does care about the variable type of the two values.</li>
+          </ul>
+          <li> > (Greater than), self explainatory.</li>
+          <li> < (Less than), really Lanchu its self explainatory.</li>
+          <li> >= (Greater than or equal to), Lanchu please stop its self-explainatory.</li>
+          <li> <= (Less than or equal to), Lanchu plz stop.</li>
+        </ul>
+      </p>
+      <h3>Logical Operators:</h3>
+      <p>
+        Let x=6, and y=3.
+        <ul>
+            <li>&&, And:</li>
+            <ul>
+                <li>(x<20 && y>2) is true.</li>
+            </ul>
+            <li>||, Or:</li>
+            <ul>
+              <li>(x==5 || y==5) is false.</li>
+            </ul>
+            <li>!, not:</li>
+            <ul>
+              <li>!(x==y) is true.</li>
             </ul>
         </ul>
       </p>
