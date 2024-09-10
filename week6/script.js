@@ -59,6 +59,12 @@ console.log(para);
 console.log(allPara);
 /*Gives you all the <p> tags in your html code.*/
 
-const question2 = document.querySelector("#question2");
+/*const question2 = document.querySelector("#question2");
 console.log(question2.textContent);
-question2 = "Hello World! OWO.";
+question2.textContent = "Hello World! OWO.";*/
+
+/*h1.classList.add("red-style");
+Adds a new class onto your current already pre-existing class attached to that tag.
+h1.classlist.remove("blue-style");
+Removes a class from your current class attached to your tags.
+*/
