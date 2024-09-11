@@ -150,11 +150,11 @@ i {
   width: 100%; /*Makes sure that the header spans the full width of the screem.*/
 }
 
-li {
+li:not(.plink) {
   float: left;
 }
 
-li a {
+li a:not(.plink) {
   display: block;
   color: #ffd6d8;
   text-align: center;
@@ -162,7 +162,14 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.plink:hover {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #9069dd;
+}
+
+li a:not(.plink):hover {
   background-color: #d2a89d;
   color: #342d2d;
 }
