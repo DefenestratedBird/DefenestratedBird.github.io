@@ -10,6 +10,7 @@ function addMe() {
 function removeMe() {
   myImg.classList.remove("round");
 }
+
 function toggleMe() {
   let myName = myImg.dataset.catname;
   helloMsg.textContent = "Hi I am " + myName;
