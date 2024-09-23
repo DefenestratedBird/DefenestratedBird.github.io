@@ -8,7 +8,7 @@ body {
 }
 
 article {
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 70px;
 }
 
@@ -191,6 +191,7 @@ ul:not(.header) li {
   clear: both; /* Ensure each list item starts on a new line */
   box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
+
 ol:not(.header) li {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
