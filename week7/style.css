@@ -98,4 +98,5 @@ img {
   background-color: coral;
   width: 0;
   transition: width 0.3s ease;
+  /*This transition allows the animation to be smoother. "Ease."*/
 }
