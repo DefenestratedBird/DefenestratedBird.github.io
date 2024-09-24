@@ -100,3 +100,8 @@ img {
   transition: width 0.3s ease;
   /*This transition allows the animation to be smoother. "Ease."*/
 }
+
+/*scale: 0.97 Changes the size of the button.
+Cursor: Pointer changes the cursors. 
+Use border radius.
+*/

@@ -74,8 +74,61 @@ let likeCount = 0;
 
 const likesBtn = document.querySelector("#like-btn");
 likesBtn.addEventListener("click", addLikes);
+/*"likesBtn.addEventListener("click", toggleFullScreen);" 
+Quite literally call the function name in the eventlistener in the previous example
+if you want to full screen it.
+*/
 
 function addLikes() {
   likeCount++;
   likes.textContent = likeCount;
+}
+
+//Fullscreening Time.
+myVideo.addEventListener("dblclick", toggleFullScreen);
+
+function toggleFullScreen() {
+  //Is there anything video fullscreen? If there is nothing fullscreen, fullscreen the video.
+  if (!document.fullscreenElement) {
+    myVideo.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+//Changing the source of a video to another video.
+const videos = [
+  {
+    name: "zenscape",
+    src: "zenscape.mp4",
+  },
+  {
+    name: "stardust",
+    src: "stardust.mp4",
+  },
+];
+
+const firstVideoBtn = document.querySelector("#first-video-btn");
+console.log(firstVideoBtn);
+
+const secondVideoBtn = document.querySelector("#second-video-btn");
+console.log(secondVideoBtn);
+
+firstVideoBtn.addEventListener("click", function () {
+  chooseVideo(0); //0 ==> is the first video
+});
+
+secondVideoBtn.addEventListener("click", function () {
+  chooseVideo(1); //0 ==> is the second video
+});
+
+const videoName = document.querySelector("#video-name");
+
+function chooseVideo(no) {
+  myVideo.src = videos[no].src;
+  videoName.textContent = videos[no].name;
+  console.log(myVideo.src);
+  //Must load it first, then it will play. VERY IMPORTANT LANCHU.
+  myVideo.load();
+  myVideo.play();
 }
