@@ -1,0 +1,84 @@
+/* Style Sheet:
+Primary 1: #260101
+Primary 2: #C68D7A
+Secondary 1: #5C9EB7
+Secondary 2: #273034
+Accent: #34E4E4 (For Hyperlinks)
+
+My primary colours are inspired by the asethetic of dark academia. Light & dark academia both have a 
+central theme of romanticising academic life & promoting a love of learning. So for me when I read the
+context of 'Music for Study', I think of a dark academia aesthetic. 
+“[This] subculture draws on idea[s]…of…[a]ctivities such as calligraphy, museum visits, libraries, coffee shops, 
+and all-night studying sessions.” ~ (Wikipedia Contributors 2024)
+
+My secondary colours are blue because I often associate the colour blue, with the concept of productivity
+and being in that study flow state.
+*/
+
+body {
+  background-color: #c68d7a;
+  margin: 0;
+}
+
+/*.plink:hover {} This is the styling for the potential links in my paragraph.*/
+
+p {
+  font-family: "Roboto Condensed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #260101;
+}
+
+h1 {
+  font-family: "Noto Sans Display", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 75;
+}
+
+h2 {
+  font-family: "Besley", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  text-align: center;
+  background-color: #260101;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  margin-right: -15px;
+  color: #c68d7a;
+  padding: 10px 11px;
+}
+
+nav ul li a:not(.plink):hover {
+  background-color: #5c9eb7;
+  color: #273034;
+  padding: 10px 11px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 11px;
+}
+
+footer {
+  margin-top: 5px;
+  background-color: #260101;
+  color: #c68d7a;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
