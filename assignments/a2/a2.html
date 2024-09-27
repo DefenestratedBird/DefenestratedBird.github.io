@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Besley:ital@0;1&family=Noto+Sans+Display:ital,wdth,wght@0,62.5..100,500;1,62.5..100,500&family=Roboto+Condensed:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <script src="/assignments/a2/a2.js" defer></script>
   </head>
   <body>
     <nav>
@@ -24,6 +25,96 @@
         <!--The "Contact" tab would link to my Moodboard.-->
       </ul>
     </nav>
+    <div class="outer">
+      <section class="audio-title">
+        <h1>Track Name:<span id="track-name"></span></h1>
+        <h1>Playtime: <span id="song-time"></span></h1>
+      </section>
+      <section class="audio-container">
+        <!-- we further divide video-container into two sections
+        1. video player
+        2. video-list: a section containing clickable images of videos 
+           that can be played.  -->
+        <audio id="my-audio" controls>
+          <source src="#" type="audio/mp3" />
+          Your browser does not support the audio tag.
+        </video>
+
+        <!--Change 'video' in '<video id="my-video" controls>' to audio if you want to use the timeline thingy but with audio. Remove the controls if you don't want the default audio controls.-->
+
+        <section class="audio-list">
+          <!-- We use buttons, whenever user clicks on them, the correspoding 
+          video will be played  -->
+          <button id="first-audio-btn">
+            <img
+              id="first-audio-img"
+              src="#"
+              alt="Zenscape"
+            />
+          </button>
+          <button id="second-audio-btn">
+            <img
+              id="second-audio-img"
+              src="#"
+              alt="stardust"
+            />
+          </button>
+
+          <section class="audio-controls">
+            <button id="play-pause-btn">
+                <img
+                  id="play-pause-img"
+                  src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+                  alt="Play Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <button id="mute-unmute-btn">
+                <img
+                  id="mute-unmute-img"
+                  src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+                  alt="Mute Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <div class="progress-bar">
+                <span id="progress-bar-fill"></span>
+              </div>
+              <button id="loop-btn">
+                <img
+                  id="loop-img"
+                  src="https://img.icons8.com/ios-glyphs/30/repeat.png"
+                  alt="Loop Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <button id="decrease-volume-btn">
+                <img
+                  id="decrease-volume-img"
+                  src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+                  alt="Decrease volume Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <button id="increase-volume-btn">
+                <img
+                  id="increase-volume-img"
+                  src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+                  alt="Increase volume Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <section class="timeline">
+                <button id="15SecsBtn">+15</button>
+              </section>
+          </section>
+        </section>
+    </div>
 
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
