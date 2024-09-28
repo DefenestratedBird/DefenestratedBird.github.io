@@ -113,12 +113,12 @@ footer {
 
 .audio-name {
   display: flex;
-  margin-right: 15px;
+  margin-right: 20px;
   align-items: flex-end;
 }
 
 .Current {
-  margin-right: 170px;
+  margin-right: 270px;
 }
 
 .outer {

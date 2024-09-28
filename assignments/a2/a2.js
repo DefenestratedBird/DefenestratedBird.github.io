@@ -30,7 +30,7 @@ const firstAudioBtn = document.querySelector("#FirstAudioBtn");
 const secondAudioBtn = document.querySelector("#SecondAudioBtn");
 const thirdAudioBtn = document.querySelector("#ThirdAudioBtn");
 const fourthAudioBtn = document.querySelector("#FourthAudioBtn");
-/*const fifthAudioBtn = document.querySelector("#FifthAudioBtn");*/
+const MainCoverImg = document.querySelector("#CurrentSongImg");
 
 firstAudioBtn.addEventListener("click", function () {
   chooseAudio(0);
@@ -48,29 +48,26 @@ fourthAudioBtn.addEventListener("click", function () {
   chooseAudio(3);
 });
 
-/*fifthAudioBtn.addEventListener("click", function () {
-    chooseVideo(5);
-  });*/
 const audios = [
-  {
-    name: "Sunset Serenity",
-    src: "/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav",
-  },
   {
     name: "City Lights Chill",
     src: "/assignments/a2/audio/687006__seth_makes_sounds__cinematic-lofi-beat.wav",
+    MainCoverImg = "/assignments/a2/images/lofi-city.jpg";
   },
   {
     name: "Lo-Fi Loop",
     src: "/assignments/a2/audio/666722__seth_makes_sounds__compressed-lofi-loop.wav",
+    MainCoverImg = "/assignments/a2/images/lofi-loop.jpg";
   },
   {
     name: "Lofi Drizzle",
     src: "/assignments/a2/audio/530585__tictac9__lo-fi-hiphop-rainy-day-tictac9.wav",
+    MainCoverImg = "/assignments/a2/images/lofi_drizzle.jpg";
   },
   {
     name: "Jangly Keys",
     src: "/assignments/a2/audio/688675__zhr__chill-lofi-piano-music.wav",
+    MainCoverImg = "/assignments/a2/images/lofi-Jangly Keys.jpg";
   },
 ];
 
