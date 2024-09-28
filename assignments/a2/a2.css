@@ -101,7 +101,7 @@ footer {
   font-style: normal;
 }
 
-.outer2 {
+.TrackInfo {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -110,9 +110,12 @@ footer {
 
 .audio-name {
   display: flex;
-  gap: 100px;
-  margin-right: 20px;
+  margin-right: 15px;
   align-items: flex-end;
+}
+
+.Current {
+  margin-right: 170px;
 }
 
 .outer {
@@ -125,15 +128,15 @@ footer {
 
 .audio-container {
   display: flex;
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 7.5px;
 }
 
 .main-elements {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 25px;
+  gap: 7.5px;
 }
 
 .audio-timeline {

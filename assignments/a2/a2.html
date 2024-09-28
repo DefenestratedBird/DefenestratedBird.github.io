@@ -26,15 +26,16 @@
       </ul>
     </nav>
     <!--outer2 flexbox is a bit funky when changing device dimesions, might need to combine outer
-    with outer flexbox-->
-    <div class="outer2">
-      <section class="audio-name">
-          <h1>Track Name:<span id="track-name"></span></h1>
+    with outer flexbox--
+    <-!<div class="outer">
+      <div class="TrackInfo">
+        <section class="audio-name">
+          <h1>Currently Playing:<span id="track-name"></span></h1>
           <h1>Playtime:<span id="song-time"></span></h1>
-        <!--Will be changing the content after Track name: with the .text content tag thingy in Javascript.-->
-      </section>
+        Will be changing the content after Track name: with the .text content tag thingy in Javascript.
+      </div>
+      </section> -->
     </div>
-    <div class="outer">
       <div class="main-elements">
       <section class="audio-container">
         <section class="CurrentSongImg">
@@ -47,6 +48,12 @@
         </audio>
       </section>
       <section class="audio-timeline">
+        <div class="TrackInfo">
+          <section class="audio-name">
+            <h1 class="Current">Currently Playing: Pixelated Memories <span id="track-name"></span></h1>
+            <h1>Playtime: 12.53<span id="song-time"></span></h1>
+          <!--Will be changing the content after Track name: with the .text content tag thingy in Javascript.-->
+        </div>
         <div class="progress-bar">
           <span id="progress-bar-fill"></span>
         </div>
