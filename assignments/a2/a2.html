@@ -25,16 +25,6 @@
         <!--The "Contact" tab would link to my Moodboard.-->
       </ul>
     </nav>
-    <!--outer2 flexbox is a bit funky when changing device dimesions, might need to combine outer
-    with outer flexbox--
-    <-!<div class="outer">
-      <div class="TrackInfo">
-        <section class="audio-name">
-          <h1>Currently Playing:<span id="track-name"></span></h1>
-          <h1>Playtime:<span id="song-time"></span></h1>
-        Will be changing the content after Track name: with the .text content tag thingy in Javascript.
-      </div>
-      </section> -->
     </div>
       <div class="main-elements">
       <section class="audio-container">
@@ -42,7 +32,7 @@
           <img src="/week7/stardust.png" alt="Current Song Cover Image." width="450" height="300">
           <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
         </section>
-        <audio id="my-audio">
+        <audio id="Audio-Track">
           <source src="/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav" type="audio/wav" />
           Your browser does not support the audio tag.
         </audio>
@@ -50,7 +40,7 @@
       <section class="audio-timeline">
         <div class="TrackInfo">
           <section class="audio-name">
-            <h1 class="Current">Currently Playing: Pixelated Memories <span id="track-name"></span></h1>
+            <h1 class="Current">Currently Playing: Pixelated Memories<span id="track-name"></span></h1>
             <h1>Playtime: 12.53<span id="song-time"></span></h1>
           <!--Will be changing the content after Track name: with the .text content tag thingy in Javascript.-->
         </div>
@@ -128,48 +118,7 @@
           </section>
         </div>
       </section>
-
     </div>
-    </div>
-
-        <!--Change 'video' in '<video id="my-video" controls>' to audio if you want to use the timeline thingy but with audio. Remove the controls if you don't want the default audio controls.-->
-        <section class="audio-list">
-          <!-- We use buttons, whenever user clicks on them, the correspoding 
-          video will be played  
-          <button id="first-audio-btn">
-            <img
-              id="first-audio-img"
-              src="#"
-              alt="Zenscape"
-            />
-          </button>
-          <button id="second-audio-btn">
-            <img
-              id="second-audio-img"
-              src="#"
-              alt="stardust"
-            />
-          </button>
-
-          <section class="audio-controls">
-              </button>
-              <div class="progress-bar">
-                <span id="progress-bar-fill"></span>
-              </div>
-              <button id="loop-btn">
-                <img
-                  id="loop-img"
-                  src="https://img.icons8.com/ios-glyphs/30/repeat.png"
-                  alt="Loop Button"
-                  width="24"
-                  height="24"
-                />
-              </button>
-              <section class="timeline">
-                <button id="15SecsBtn">+15</button>
-              </section>
-          </section>
-        </section>-->
 
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
