@@ -33,15 +33,15 @@
           <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
         </section>
         <audio id="Audio-Track">
-          <source src="/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav" type="audio/wav" />
+          <source src="/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav" type="audio/wav" />     
           Your browser does not support the audio tag.
         </audio>
       </section>
       <section class="audio-timeline">
         <div class="TrackInfo">
           <section class="audio-name">
-            <h2 class="Current">Currently Playing: Pixelated Memories<span id="track-name"></span></h2>
-            <h2>Playtime: 12.53<span id="song-time"></span></h2>
+            <h2 class="Current">Playing: <span id="track-name"></span></h2>
+            <h2>Playtime: <span id="song-time">0.00</span></h2>
           <!--Will be changing the content after Track name: with the .text content tag thingy in Javascript.-->
         </div>
         <div class="progress-bar">
@@ -97,26 +97,21 @@
             </div>
           </section>
         </div>
-        <div class="SongSel1">
-          <section class="SongImg1">
-            <img src="/week7/stardust.png" alt="Cover image for Song 1." width="245" height="120">
-            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+        <section class="Songlist">
+          <section class="SongSel1">
+            <button id="FirstAudioBtn">
+              <img src="/week7/stardust.png" alt="Cover image for Song 1." width="245" height="120">
+               <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+            </button>
+            <button id="SecondAudioBtn">
+              <img src="/week7/stardust.png" alt="Cover image for Song 2." width="245" height="120">
+              <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
           </section>
-          <section class="SongImg2">
-            <img src="/week7/stardust.png" alt="Cover image for Song 2." width="245" height="120">
-            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+          <section class="SongSel2">
+            <button id="ThirdAudioBtn"><img src="/week7/stardust.png" alt="Cover image for Song 3." width="245" height="120"></button>
+            <button id="FourthAudioBtn"><img src="/week7/stardust.png" alt="Cover image for Song 4." width="245" height="120"></button>
           </section>
-        </div>
-        <div class="SongSel2">
-          <section class="SongImg3">
-            <img src="/week7/stardust.png" alt="Cover image for Song 3." width="245" height="120">
-            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
-          </section>
-          <section class="SongImg4">
-            <img src="/week7/stardust.png" alt="Cover image for Song 4." width="245" height="120">
-            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
-          </section>
-        </div>
+        </section>
       </section>
     </div>
 

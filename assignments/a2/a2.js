@@ -21,6 +21,59 @@ Minus15SecsBtn.addEventListener("click", backwards15Secs);
 
 const currentTime = myAudio.currentTime;
 
+myAudio.addEventListener("timeupdate", showProgress);
+const progressBar = document.querySelector("#progress-bar-fill");
+const AudioTime = document.querySelector("#song-time");
+
+const audioName = document.querySelector("#track-name");
+const firstAudioBtn = document.querySelector("#FirstAudioBtn");
+const secondAudioBtn = document.querySelector("#SecondAudioBtn");
+const thirdAudioBtn = document.querySelector("#ThirdAudioBtn");
+const fourthAudioBtn = document.querySelector("#FourthAudioBtn");
+/*const fifthAudioBtn = document.querySelector("#FifthAudioBtn");*/
+
+firstAudioBtn.addEventListener("click", function () {
+  chooseAudio(0);
+});
+
+secondAudioBtn.addEventListener("click", function () {
+  chooseAudio(1);
+});
+
+thirdAudioBtn.addEventListener("click", function () {
+  chooseAudio(2);
+});
+
+fourthAudioBtn.addEventListener("click", function () {
+  chooseAudio(3);
+});
+
+/*fifthAudioBtn.addEventListener("click", function () {
+    chooseVideo(5);
+  });*/
+const audios = [
+  {
+    name: "Sunset Serenity",
+    src: "/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav",
+  },
+  {
+    name: "City Lights Chill",
+    src: "/assignments/a2/audio/687006__seth_makes_sounds__cinematic-lofi-beat.wav",
+  },
+  {
+    name: "Lo-Fi Loop",
+    src: "/assignments/a2/audio/666722__seth_makes_sounds__compressed-lofi-loop.wav",
+  },
+  {
+    name: "Lofi Drizzle",
+    src: "/assignments/a2/audio/530585__tictac9__lo-fi-hiphop-rainy-day-tictac9.wav",
+  },
+  {
+    name: "Jangly Keys",
+    src: "/assignments/a2/audio/688675__zhr__chill-lofi-piano-music.wav",
+  },
+];
+
 function togglePlay() {
   /*If the song is in the paused() default state or the song has ended*/
   if (myAudio.paused || myAudio.ended) {
@@ -63,4 +116,22 @@ function forwards15Secs() {
 
 function backwards15Secs() {
   myAudio.currentTime = myAudio.currentTime - 15;
+}
+
+function showProgress() {
+  const currentTime = myAudio.currentTime;
+  console.log("current time", currentTime.toFixed(2));
+  AudioTime.textContent = currentTime.toFixed(2);
+
+  const progress = (currentTime / myAudio.duration) * 100;
+  console.log("progress", progress.toFixed(2));
+  progressBar.style.width = progress + "%";
+}
+
+function chooseAudio(no) {
+  myAudio.src = audios[no].src;
+  audioName.textContent = audios[no].name;
+  //Must load it first, then it will play. VERY IMPORTANT LANCHU.
+  myAudio.load();
+  myAudio.play();
 }

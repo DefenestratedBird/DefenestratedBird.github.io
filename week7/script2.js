@@ -96,7 +96,6 @@ function toggleFullScreen() {
   }
 }
 
-//Changing the source of a video to another video.
 const videos = [
   {
     name: "zenscape",
