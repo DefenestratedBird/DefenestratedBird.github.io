@@ -25,43 +25,35 @@
         <!--The "Contact" tab would link to my Moodboard.-->
       </ul>
     </nav>
-    <div class="outer">
-      <section class="audio-title">
-        <h1>Track Name:<span id="track-name"></span></h1>
-        <h1>Playtime: <span id="song-time"></span></h1>
+    <!--outer2 flexbox is a bit funky when changing device dimesions, might need to combine outer
+    with outer flexbox-->
+    <div class="outer2">
+      <section class="audio-name">
+          <h1>Track Name:<span id="track-name"></span></h1>
+          <h1>Playtime:<span id="song-time"></span></h1>
+        <!--Will be changing the content after Track name: with the .text content tag thingy in Javascript.-->
       </section>
+    </div>
+    <div class="outer">
+      <div class="main-elements">
       <section class="audio-container">
-        <!-- we further divide video-container into two sections
-        1. video player
-        2. video-list: a section containing clickable images of videos 
-           that can be played.  -->
-        <audio id="my-audio" controls>
-          <source src="#" type="audio/mp3" />
+        <section class="CurrentSongImg">
+          <img src="/week7/stardust.png" alt="Current Song Cover Image." width="450" height="300">
+          <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+        </section>
+        <audio id="my-audio">
+          <source src="/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav" type="audio/wav" />
           Your browser does not support the audio tag.
-        </video>
-
-        <!--Change 'video' in '<video id="my-video" controls>' to audio if you want to use the timeline thingy but with audio. Remove the controls if you don't want the default audio controls.-->
-
-        <section class="audio-list">
-          <!-- We use buttons, whenever user clicks on them, the correspoding 
-          video will be played  -->
-          <button id="first-audio-btn">
-            <img
-              id="first-audio-img"
-              src="#"
-              alt="Zenscape"
-            />
-          </button>
-          <button id="second-audio-btn">
-            <img
-              id="second-audio-img"
-              src="#"
-              alt="stardust"
-            />
-          </button>
-
-          <section class="audio-controls">
-            <button id="play-pause-btn">
+        </audio>
+      </section>
+      <section class="audio-timeline">
+        <div class="progress-bar">
+          <span id="progress-bar-fill"></span>
+        </div>
+        <div class="secondary-elements">
+          <section class="audio-buttons">
+            <div class="PlaybackCons">
+              <button id="play-pause-btn">
                 <img
                   id="play-pause-img"
                   src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
@@ -75,18 +67,6 @@
                   id="mute-unmute-img"
                   src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
                   alt="Mute Button"
-                  width="24"
-                  height="24"
-                />
-              </button>
-              <div class="progress-bar">
-                <span id="progress-bar-fill"></span>
-              </div>
-              <button id="loop-btn">
-                <img
-                  id="loop-img"
-                  src="https://img.icons8.com/ios-glyphs/30/repeat.png"
-                  alt="Loop Button"
                   width="24"
                   height="24"
                 />
@@ -109,12 +89,80 @@
                   height="24"
                 />
               </button>
+            </div>
+            <div class="SkipCons">
+              <section class="For15Btn">
+                <button id="15SecsBtn">+15</button>
+              </section>
+              <section class="Back15Btn">
+                <button id="15SecsBtn">-15</button>
+              </section>
+            </div>
+          </section>
+        </div>
+        <div class="SongSel1">
+          <section class="SongImg1">
+            <img src="/week7/stardust.png" alt="Cover image for Song 1." width="245" height="120">
+            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+          </section>
+          <section class="SongImg2">
+            <img src="/week7/stardust.png" alt="Cover image for Song 2." width="245" height="120">
+            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+          </section>
+        </div>
+        <div class="SongSel2">
+          <section class="SongImg3">
+            <img src="/week7/stardust.png" alt="Cover image for Song 3." width="245" height="120">
+            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+          </section>
+          <section class="SongImg4">
+            <img src="/week7/stardust.png" alt="Cover image for Song 4." width="245" height="120">
+            <!--Will be changing the content after Track name: with the src content tag thingy in Javascript.-->
+          </section>
+        </div>
+      </section>
+
+    </div>
+    </div>
+
+        <!--Change 'video' in '<video id="my-video" controls>' to audio if you want to use the timeline thingy but with audio. Remove the controls if you don't want the default audio controls.-->
+        <section class="audio-list">
+          <!-- We use buttons, whenever user clicks on them, the correspoding 
+          video will be played  
+          <button id="first-audio-btn">
+            <img
+              id="first-audio-img"
+              src="#"
+              alt="Zenscape"
+            />
+          </button>
+          <button id="second-audio-btn">
+            <img
+              id="second-audio-img"
+              src="#"
+              alt="stardust"
+            />
+          </button>
+
+          <section class="audio-controls">
+              </button>
+              <div class="progress-bar">
+                <span id="progress-bar-fill"></span>
+              </div>
+              <button id="loop-btn">
+                <img
+                  id="loop-img"
+                  src="https://img.icons8.com/ios-glyphs/30/repeat.png"
+                  alt="Loop Button"
+                  width="24"
+                  height="24"
+                />
+              </button>
               <section class="timeline">
                 <button id="15SecsBtn">+15</button>
               </section>
           </section>
-        </section>
-    </div>
+        </section>-->
 
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
