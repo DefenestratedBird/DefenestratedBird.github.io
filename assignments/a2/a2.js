@@ -18,11 +18,13 @@ volumeDecreaseBtn.addEventListener("click", decreaseVolume);
 const volumeIncreaseBtn = document.querySelector("#increase-volume-btn");
 volumeIncreaseBtn.addEventListener("click", increaseVolume);
 
-/*Fast forward & Rewind backwards 15 seconds buttons querySelectors & eventlisteners:*/
-const Plus15SecsBtn = document.querySelector("#Plus15SecsBtn");
-Plus15SecsBtn.addEventListener("click", forwards15Secs);
-const Minus15SecsBtn = document.querySelector("#Minus15SecsBtn");
-Minus15SecsBtn.addEventListener("click", backwards15Secs);
+/*Fast forward & Rewind backwards 10 seconds buttons querySelectors & eventlisteners:*/
+const Plus10SecsBtn = document.querySelector("#Plus10SecsBtn");
+Plus10SecsBtn.addEventListener("click", forwards10Secs);
+const Minus10SecsBtn = document.querySelector("#Minus10SecsBtn");
+Minus10SecsBtn.addEventListener("click", backwards10Secs);
+
+let isonclick = false;
 
 /*Timeline querySelectors & eventlisteners:*/
 myAudio.addEventListener("timeupdate", showProgress);
@@ -83,11 +85,19 @@ function togglePlay() {
   if (myAudio.paused || myAudio.ended) {
     /*Play the song & change the default "play" icon state to "pause" icon state.*/
     myAudio.play();
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+    playPauseImg.src =
+      "https://img.icons8.com/?size=100&id=61012&format=png&color=260101";
+    playPauseBtn.style.backgroundColor = "#5C9EB7";
+    playPauseBtn.style.borderColor = "#260101";
+    playPauseBtn.style.transform = "scale(0.9)";
   } else {
     /*If not paused the song & change the "pause" icon state to default "play" icon state. */
     myAudio.pause();
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+    playPauseImg.src =
+      "https://img.icons8.com/?size=100&id=fjx0LfGCNuZb&format=png&color=260101";
+    playPauseBtn.style.backgroundColor = "#dfac99";
+    playPauseBtn.style.borderColor = "#260101";
+    playPauseBtn.style.transform = "scale(1)";
   }
 }
 
@@ -97,13 +107,18 @@ function toggleAudio() {
     /*Then unmute the song.*/
     myAudio.muted = false;
     muteUnmuteImg.src =
-      "https://img.icons8.com/ios-glyphs/30/high-volume--v1.png";
-    /*muteUnmuteBtn.style.backgroundColor = "red";*/
+      "https://img.icons8.com/?size=100&id=108731&format=png&color=260101";
+    muteUnmuteButton.style.backgroundColor = "#dfac99";
+    muteUnmuteButton.style.borderColor = "#260101";
+    muteUnmuteButton.style.transform = "scale(1)";
   } else {
     /*If not then muted the song.*/
     myAudio.muted = true;
-    muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
-    /*muteUnmuteBtn.style.backgroundColor = "green";*/
+    muteUnmuteImg.src =
+      "https://img.icons8.com/?size=100&id=102034&format=png&color=260101";
+    muteUnmuteButton.style.backgroundColor = "#5C9EB7";
+    muteUnmuteButton.style.borderColor = "#260101";
+    muteUnmuteButton.style.transform = "scale(0.9)";
   }
 }
 
@@ -114,27 +129,65 @@ I wanted to have it so that when the "#decrease-volume-btn" button is pressed th
 /*When decrease volume button is pressed*/
 function decreaseVolume() {
   /*Set current audio volume= Current audio volume - 0.1*/
-  myAudio.volume = myAudio.volume - 0.1;
+  if (myAudio.volume > 0.11) {
+    myAudio.volume = myAudio.volume - 0.1;
+    volumeDecreaseBtn.style.backgroundColor = "#5C9EB7";
+    volumeDecreaseBtn.style.borderColor = "#260101";
+    volumeDecreaseBtn.style.transform = "scale(0.9)";
+  } else {
+    volumeDecreaseBtn.style.backgroundColor = "#dfac99";
+    volumeDecreaseBtn.style.borderColor = "#260101";
+    volumeDecreaseBtn.style.transform = "scale(1)";
+  }
 }
 
 /*When increase volume button is pressed*/
 function increaseVolume() {
   /*Set current audio volume = Current audio volume + 0.1*/
-  myAudio.volume = myAudio.volume + 0.1;
+  if (myAudio.volume < 0.9) {
+    myAudio.volume = myAudio.volume + 0.1;
+    volumeIncreaseBtn.style.backgroundColor = "#5C9EB7";
+    volumeIncreaseBtn.style.borderColor = "#260101";
+    volumeIncreaseBtn.style.transform = "scale(0.9)";
+  } else {
+    volumeIncreaseBtn.style.backgroundColor = "#dfac99";
+    volumeIncreaseBtn.style.borderColor = "#260101";
+    volumeIncreaseBtn.style.transform = "scale(1)";
+  }
 }
 
-/*When FastForwards 15 Seconds button is pressed*/
-function forwards15Secs() {
-  /*The current position of the audio = The current position of the audio + 15 seconds.*/
-  myAudio.currentTime = myAudio.currentTime + 15;
-  /* We want js to check the current time of song. And then add +15 seconds in terms of duration
-   to the current time of song.*/
+/*When FastForwards 10 Seconds button is pressed*/
+function forwards10Secs() {
+  /*The current position of the audio = The current position of the audio + 10 seconds.*/
+  myAudio.currentTime = myAudio.currentTime + 10;
+  if (!isonclick) {
+    Plus10SecsBtn.style.backgroundColor = "#5C9EB7";
+    Plus10SecsBtn.style.borderColor = "#260101";
+    Plus10SecsBtn.style.transform = "scale(0.9)";
+    isonclick = true;
+  } else {
+    Plus10SecsBtn.style.backgroundColor = "#dfac99";
+    Plus10SecsBtn.style.borderColor = "#260101";
+    Plus10SecsBtn.style.transform = "scale(1)";
+    isonclick = false;
+  }
 }
 
-/*When Rewind 15 Seconds button is pressed*/
-function backwards15Secs() {
-  /*The current position of the audio = The current position of the audio - 15 seconds.*/
-  myAudio.currentTime = myAudio.currentTime - 15;
+/*When Rewind 10 Seconds button is pressed*/
+function backwards10Secs() {
+  /*The current position of the audio = The current position of the audio - 10 seconds.*/
+  myAudio.currentTime = myAudio.currentTime - 10;
+  if (!isonclick) {
+    Minus10SecsBtn.style.backgroundColor = "#5C9EB7";
+    Minus10SecsBtn.style.borderColor = "#260101";
+    Minus10SecsBtn.style.transform = "scale(0.9)";
+    isonclick = true;
+  } else {
+    Minus10SecsBtn.style.backgroundColor = "#dfac99";
+    Minus10SecsBtn.style.borderColor = "#260101";
+    Minus10SecsBtn.style.transform = "scale(1)";
+    isonclick = false;
+  }
 }
 
 /*Showing the progress of the current audio track.*/
