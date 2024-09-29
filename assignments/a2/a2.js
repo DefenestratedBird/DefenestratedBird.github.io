@@ -61,22 +61,22 @@ const audios = [
   {
     name: "Sunset Serenity",
     src: "/assignments/a2/audio/688285__seth_makes_sounds__tranquil-lofi-beat.wav",
-    img: "/assignments/a2/images/lofi-sunset.jpg",
+    img: "/assignments/a2/images/SS-Cover-Enhanced.jpg",
   },
   {
     name: "City Lights Chill",
     src: "/assignments/a2/audio/687006__seth_makes_sounds__cinematic-lofi-beat.wav",
-    img: "/assignments/a2/images/lofi-city.jpg",
+    img: "/assignments/a2/images/CL-Cover-Enhanced.jpg",
   },
   {
     name: "Lo-Fi Loop",
     src: "/assignments/a2/audio/666722__seth_makes_sounds__compressed-lofi-loop.wav",
-    img: "/assignments/a2/images/lofi-loop.jpg",
+    img: "/assignments/a2/images/Lo-Fi Loop Enhanced.jpg",
   },
   {
     name: "Lofi Drizzle",
     src: "/assignments/a2/audio/530585__tictac9__lo-fi-hiphop-rainy-day-tictac9.wav",
-    img: "/assignments/a2/images/lofi_drizzle.jpg",
+    img: "/assignments/a2/images/LD-Cover-Enhanced.jpg",
   },
 ];
 

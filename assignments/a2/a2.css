@@ -22,6 +22,8 @@ body {
 
 /*.plink:hover {} This is the styling for the potential links in my paragraph.*/
 
+/*The reason why I chose "Roboto Condensed & Noto Sans Display is because I wanted to emulate
+academic fonts. Which are fonts that are usually straight and or easy to read.*/
 p {
   font-family: "Roboto Condensed", system-ui;
   font-optical-sizing: auto;
@@ -40,6 +42,8 @@ h1 {
   color: #260101;
 }
 
+/*Wanted to use Besely because I believe that Besley would provide better contrast against 
+the two straighter fonts "Roboto Condensed" and "Noto Sans Display".*/
 h2 {
   font-family: "Besley", system-ui;
   font-optical-sizing: auto;
@@ -105,6 +109,16 @@ footer {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.RefLinks {
+  text-decoration: none;
+  color: #c68d7a;
+}
+
+.RefLinks:hover {
+  text-decoration: none;
+  color: #34e4e4;
 }
 
 /*"Used object-fit: cover;" here because I did not want the different "#CurrentSongImg" covers' images to wrap when selected
@@ -230,10 +244,16 @@ img {
 #SecondAudioBtn,
 #ThirdAudioBtn,
 #FourthAudioBtn {
-  border: 1.5px solid #260101;
-  border-radius: 5px;
+  border: 3.5px solid #260101;
+  border-radius: 6px;
+  outline-offset: -2px;
+}
+
+.Songlist > img {
+  object-fit: cover;
 }
 
 #CurrentSongImg {
-  border: 1.5px solid #260101;
+  border: 3.5px solid #260101;
+  outline-offset: -2px;
 }
