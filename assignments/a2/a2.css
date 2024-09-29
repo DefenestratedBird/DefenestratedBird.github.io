@@ -143,8 +143,6 @@ for display.*/
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* border-radius: 5px; */
-  /* flex-wrap: wrap; */
 }
 
 .audio-container {
@@ -168,7 +166,7 @@ for display.*/
 }
 
 .PlaybackCons {
-  margin-right: 300px;
+  margin-right: 338px;
   margin-top: 5px;
   margin-bottom: 5px;
   gap: 5px;
@@ -232,5 +230,10 @@ img {
 #SecondAudioBtn,
 #ThirdAudioBtn,
 #FourthAudioBtn {
+  border: 1.5px solid #260101;
+  border-radius: 5px;
+}
+
+#CurrentSongImg {
   border: 1.5px solid #260101;
 }
