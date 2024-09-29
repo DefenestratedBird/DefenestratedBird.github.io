@@ -123,6 +123,10 @@ footer {
 
 /*"Used object-fit: cover;" here because I did not want the different "#CurrentSongImg" covers' images to wrap when selected
 for display.*/
+.SongImg {
+  margin-top: 8px;
+}
+
 #CurrentSongImg {
   width: 450px;
   height: 300px;
