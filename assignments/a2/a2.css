@@ -183,6 +183,12 @@ for display.*/
   gap: 5px;
 }
 
+.Back10Btn,
+.For10Btn > button,
+img {
+  border-radius: 4px;
+}
+
 .audio-buttons {
   display: flex;
   flex-direction: row;
