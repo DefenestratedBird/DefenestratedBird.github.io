@@ -107,3 +107,25 @@ footer {
 #profile-content.show {
   display: block;
 }
+
+/*Styling for the scroll example */
+#scroll-content {
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  border: 2px dashed coral;
+}
+
+#long-text {
+  width: 400px;
+  height: 0px;
+}
+
+#purple-box {
+  background-color: purple;
+  cursor: pointer;
+}
+
+#drop-box {
+  cursor: pointer;
+}
