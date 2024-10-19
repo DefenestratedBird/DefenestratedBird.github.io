@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.arcade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-controls {
+  border: 1px solid red;
+}
+
+.maze-container {
+  border: 1px solid rgb(0, 255, 42);
+}
+
+.score {
+  margin: 5px;
+}
+
+.controllers > button {
+  margin: 4px;
+  padding: 5px;
+}
