@@ -6,26 +6,63 @@ body {
   margin: 0;
 }
 
-.arcade {
+.GameInt {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
+  margin: 15px;
 }
 
+.arcade {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 7px;
+}
+
+/*Below here is the CSS formatting for the controls & High score.*/
 .game-controls {
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  align-items: center;
+  width: 200px;
+  border-radius: 5px;
 }
 
-.maze-container {
-  border: 1px solid rgb(0, 255, 42);
+.controllers {
+  margin: 20px;
+}
+
+.UpDown {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.UpDown > button {
+  flex-direction: column;
+  align-self: center;
+}
+
+.right-left {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .score {
-  margin: 5px;
+  margin: 10px;
 }
 
 .controllers > button {
   margin: 4px;
   padding: 5px;
+}
+
+/*Below this line is going to be the formatting for the maze.*/
+.maze-container {
+  border: 1px solid rgb(0, 255, 42);
+  width: 500px;
+  border-radius: 5px;
 }
