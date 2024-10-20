@@ -66,3 +66,58 @@ body {
   width: 500px;
   border-radius: 5px;
 }
+
+.ball {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(245, 241, 9);
+  border-radius: 100px;
+
+  position: absolute;
+  top: 370px;
+  left: 90px;
+}
+
+.wall1,
+.wall2,
+.wall3,
+.wall4,
+.wall5,
+.wall6,
+.wall7,
+.wall8,
+.wall9,
+.wall10,
+.wall11,
+.wall12,
+.wall13,
+.wall14,
+.wall15 {
+  background-color: rgb(53, 34, 5);
+  position: absolute;
+}
+
+.wall1 {
+  top: 290px;
+  left: 160px;
+
+  width: 10px;
+  height: 122px;
+}
+
+.wall2 {
+  width: 90px;
+  height: 60px;
+
+  top: 190px;
+  left: 80px;
+}
+
+.wall3 {
+  width: 90px;
+  height: 15px;
+
+  top: 235px;
+  left: 170px;
+  background-color: brown;
+}
