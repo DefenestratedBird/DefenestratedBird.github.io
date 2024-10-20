@@ -23,7 +23,7 @@ scaleButton.addEventListener("click", scaleBall);
 
 let distance = 0;
 function moveBall() {
-  //If my distance is less then the width of the outerbox do not do outside the outerbox.
+  //If my distance is less then the width of the outerbox do not go outside the outerbox.
   if (distance < outerWidth) {
     //Remember that ${} lets use to create a variable within a string variable.
     distance += 30;
