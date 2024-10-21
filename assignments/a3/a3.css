@@ -63,8 +63,8 @@ body {
 /*Below this line is going to be the formatting for the maze.*/
 .maze-container {
   border: 1px solid rgb(0, 255, 42);
-  min-width: 500px;
-  min-height: 392px;
+  width: 500px;
+  height: 392px;
   border-radius: 5px;
 }
 
@@ -75,40 +75,28 @@ body {
   border-radius: 100px;
 
   position: absolute;
-  top: 370px;
-  left: 90px;
+  top: 350px;
+  left: 10px;
 
   transition: transform 0.3s ease-out;
 }
 
-.wall1,
-.wall2,
-.wall3,
-.wall4,
-.wall5,
-.wall6,
-.wall7,
-.wall8,
-.wall9,
-.wall10,
-.wall11,
-.wall12,
-.wall13,
-.wall14,
-.wall15 {
-  background-color: rgb(53, 34, 5);
-  position: absolute;
+.maze-container {
+  position: relative;
 }
 
 .wall1 {
-  top: 290px;
-  left: 160px;
+  background-color: aqua;
+
+  position: absolute;
+  top: 269px;
+  left: 140px;
 
   width: 10px;
   height: 122px;
 }
 
-.wall2 {
+/*.wall2 {
   width: 90px;
   height: 60px;
 
@@ -132,4 +120,4 @@ body {
   top: 150px;
   left: 260px;
   background-color: royalblue;
-}
+}*/
