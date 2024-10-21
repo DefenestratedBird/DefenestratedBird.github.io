@@ -132,3 +132,13 @@ body {
   left: 155px;
   background-color: royalblue;
 }
+
+.wall5 {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+
+  top: 145px;
+  left: 155px;
+  background-color: rgb(23, 233, 68);
+}
