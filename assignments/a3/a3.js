@@ -4,7 +4,6 @@ console.log(ball);
 function UpdateBallPosition() {
   ball.style.transform = `translate(${XDistance}px, ${YDistance}px)`;
   console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);
-  checkCollision();
 }
 
 const walls = document.querySelectorAll(
@@ -38,9 +37,10 @@ function UpwardsBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
   if (YDistance > -300) {
     YDistance -= 36;
-    if (checkCollision()) {
-      YDistance += 36;
-      UpdateBallPosition();
+    UpdateBallPosition();
+    checkCollision();
+    {
+      YDistance += 30;
     }
     /*transformBall(); For da reset button.*/
   }
@@ -55,10 +55,7 @@ function DownwardsBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
   if (YDistance < 20) {
     YDistance += 35;
-    if (checkCollision()) {
-      YDistance -= 35;
-      UpdateBallPosition();
-    }
+    UpdateBallPosition();
     /*transformBall(); For da reset button.*/
   }
 }
@@ -75,10 +72,7 @@ function LeftBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
   if (XDistance > 0) {
     XDistance -= 30;
-    if (checkCollision()) {
-      XDistance += 30;
-      UpdateBallPosition();
-    }
+    UpdateBallPosition();
     /*transformBall(); For da reset button.*/
   }
 }
@@ -91,10 +85,8 @@ function RightBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
   if (XDistance < 450) {
     XDistance += 30;
-    if (checkCollision()) {
-      XDistance -= 30;
-      UpdateBallPosition();
-    }
+    UpdateBallPosition();
+
     console.log(XDistance);
     /*transformBall(); For da reset button.*/
   }
