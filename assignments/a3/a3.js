@@ -14,8 +14,8 @@ UpButton.addEventListener("click", UpwardsBall);
 let YDistance = 0;
 function UpwardsBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
-  if (YDistance > -330) {
-    YDistance -= 30;
+  if (YDistance > -300) {
+    YDistance -= 36;
     UpdateBallPosition();
     /*transformBall(); For da reset button.*/
   }
@@ -28,8 +28,8 @@ DownButton.addEventListener("click", DownwardsBall);
 
 function DownwardsBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
-  if (YDistance < 0) {
-    YDistance += 30;
+  if (YDistance < 15) {
+    YDistance += 35;
     UpdateBallPosition();
     /*transformBall(); For da reset button.*/
   }

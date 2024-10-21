@@ -66,6 +66,17 @@ body {
   width: 500px;
   height: 392px;
   border-radius: 5px;
+  position: relative;
+}
+
+.StartText > p {
+  margin: 7px;
+}
+
+.StartText {
+  position: absolute;
+  top: 360px;
+  left: 0px;
 }
 
 .ball {
@@ -75,49 +86,49 @@ body {
   border-radius: 100px;
 
   position: absolute;
-  top: 350px;
-  left: 10px;
+  top: 325px;
+  left: 12px;
 
   transition: transform 0.3s ease-out;
-}
-
-.maze-container {
-  position: relative;
 }
 
 .wall1 {
   background-color: aqua;
 
   position: absolute;
-  top: 269px;
-  left: 140px;
+  top: 291px;
+  left: 60px;
 
   width: 10px;
-  height: 122px;
+  height: 100px;
 }
 
-/*.wall2 {
+.wall2 {
+  background-color: aqua;
+  position: absolute;
   width: 90px;
   height: 60px;
 
-  top: 190px;
-  left: 80px;
+  top: 170px;
+  left: 0px;
 }
 
 .wall3 {
-  width: 90px;
+  position: absolute;
+  width: 65px;
   height: 15px;
 
-  top: 235px;
-  left: 170px;
+  top: 215px;
+  left: 90px;
   background-color: brown;
 }
 
 .wall4 {
+  position: absolute;
   width: 50px;
-  height: 215px;
+  height: 200px;
 
-  top: 150px;
-  left: 260px;
+  top: 145px;
+  left: 155px;
   background-color: royalblue;
-}*/
+}
