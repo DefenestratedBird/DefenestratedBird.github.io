@@ -1,24 +1,23 @@
 const ball = document.querySelector(".ball");
 console.log(ball);
 
-/*const MazeContainer = document.querySelector(".maze-container");
-let MazeContainerWidth = MazeContainer.clientWidth / 2 - 49;
-let MazeContainerHeight = MazeContainer.clientHeight - 60;
-console.log(MazeContainerHeight);*/
+function UpdateBallPosition() {
+  ball.style.transform = `translate(${XDistance}px, ${YDistance}px)`;
+  console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);
+}
 
 /*Up Button Move*/
 const UpButton = document.querySelector("#up");
 console.log(UpButton);
 UpButton.addEventListener("click", UpwardsBall);
 
-let TotalDistance = 0;
+let YDistance = 0;
 function UpwardsBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
-  if (TotalDistance > -330) {
-    TotalDistance -= 30;
-    ball.style.transform = `translateY(${TotalDistance}px)`;
+  if (YDistance > -330) {
+    YDistance -= 30;
+    UpdateBallPosition();
     /*transformBall(); For da reset button.*/
-    console.log(ball.style.transform);
   }
 }
 
@@ -29,10 +28,9 @@ DownButton.addEventListener("click", DownwardsBall);
 
 function DownwardsBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
-  if (TotalDistance < 0) {
-    TotalDistance += 30;
-    ball.style.transform = `translateY(${TotalDistance}px)`;
-    console.log(TotalDistance);
+  if (YDistance < 0) {
+    YDistance += 30;
+    UpdateBallPosition();
     /*transformBall(); For da reset button.*/
   }
 }
@@ -43,12 +41,13 @@ const LeftButton = document.querySelector("#left");
 console.log(LeftButton);
 LeftButton.addEventListener("click", LeftBall);
 
+let XDistance = 0;
+
 function LeftBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
-  if (TotalDistance < 3000) {
-    TotalDistance -= 30;
-    ball.style.transform = `translateX(${TotalDistance}px)`;
-    console.log(ball.style.transform);
+  if (XDistance > 0) {
+    XDistance -= 30;
+    UpdateBallPosition();
     /*transformBall(); For da reset button.*/
   }
 }
@@ -59,10 +58,10 @@ RightButton.addEventListener("click", RightBall);
 
 function RightBall() {
   //If my distance is less then the width of the outerbox do not go outside the outerbox.
-  if (TotalDistance < 3000) {
-    TotalDistance += 30;
-    ball.style.transform = `translateX(${TotalDistance}px)`;
-    console.log(ball.style.transform);
+  if (XDistance < 450) {
+    XDistance += 30;
+    UpdateBallPosition();
+    console.log(XDistance);
     /*transformBall(); For da reset button.*/
   }
 }
