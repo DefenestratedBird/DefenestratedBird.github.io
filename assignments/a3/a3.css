@@ -79,6 +79,16 @@ body {
   left: 0px;
 }
 
+.EndText > p {
+  margin: 7px;
+}
+
+.EndText {
+  position: absolute;
+  top: 0px;
+  left: 425px;
+}
+
 .ball {
   width: 35px;
   height: 35px;
@@ -106,7 +116,7 @@ body {
 .wall2 {
   background-color: rgb(8, 40, 40);
   position: absolute;
-  width: 70px;
+  width: 60px;
   height: 60px;
 
   top: 170px;
@@ -119,7 +129,7 @@ body {
   height: 15px;
 
   top: 215px;
-  left: 70px;
+  left: 60px;
   background-color: brown;
 }
 
@@ -129,7 +139,7 @@ body {
   height: 200px;
 
   top: 145px;
-  left: 135px;
+  left: 125px;
   background-color: royalblue;
 }
 
@@ -139,17 +149,17 @@ body {
   height: 290px;
 
   top: 101px;
-  left: 280px;
+  left: 265px;
   background-color: rgb(23, 233, 68);
 }
 
 .wall6 {
   position: absolute;
-  width: 120px;
+  width: 115px;
   height: 34px;
 
   top: 67px;
-  left: 175px;
+  left: 165px;
   background-color: rgb(219, 233, 23);
 }
 
@@ -159,7 +169,7 @@ body {
   height: 20px;
 
   top: 0px;
-  left: 300px;
+  left: 290px;
   background-color: rgb(23, 76, 233);
 }
 
@@ -169,6 +179,26 @@ body {
   height: 290px;
 
   top: 20px;
-  left: 390px;
+  left: 380px;
   background-color: rgb(163, 23, 233);
+}
+
+.wall9 {
+  position: absolute;
+  width: 20px;
+  height: 310px;
+
+  top: 0px;
+  left: 478.5px;
+  background-color: rgb(13, 60, 22);
+}
+
+.wall10 {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+
+  top: 360.5px;
+  left: 438.5px;
+  background-color: rgb(60, 13, 28);
 }
