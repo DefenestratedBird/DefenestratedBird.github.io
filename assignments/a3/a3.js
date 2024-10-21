@@ -37,6 +37,8 @@ function DownwardsBall() {
   }
 }
 
+/*Current issue it is the translateX is changing the value of translateY.*/
+
 const LeftButton = document.querySelector("#left");
 console.log(LeftButton);
 LeftButton.addEventListener("click", LeftBall);
