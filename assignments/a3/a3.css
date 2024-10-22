@@ -201,10 +201,40 @@ body {
 
 #obs1 {
   position: absolute;
-  width: 35px;
-  height: 10px;
+  width: 46px;
+  height: 25px;
 
   top: 320px;
   left: 175px;
+  background-color: red;
+}
+
+#obs2 {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+
+  top: 250px;
+  left: 230px;
+  background-color: red;
+}
+
+#obs3 {
+  position: absolute;
+  width: 46px;
+  height: 25px;
+
+  top: 185px;
+  left: 175px;
+  background-color: red;
+}
+
+#obs4 {
+  position: absolute;
+  width: 37px;
+  height: 39px;
+
+  top: 101px;
+  left: 228px;
   background-color: red;
 }
