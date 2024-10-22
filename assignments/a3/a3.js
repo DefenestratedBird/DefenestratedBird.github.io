@@ -6,9 +6,12 @@ function UpdateBallPosition() {
   /*console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);*/
 }
 
-const walls = document.querySelectorAll(
-  "#wall1, #wall2, #wall3, #wall4, #wall5, #wall6, #wall7, #wall8, #wall9, #wall10"
-);
+// const walls = document.querySelectorAll(
+//   "#wall1, #wall2, #wall3, #wall4, #wall5, #wall6, #wall7, #wall8, #wall9, #wall10"
+// );
+
+const walls = document.querySelectorAll(".wall");
+console.log(walls);
 
 function checkCollision(newXDistance, newYDistance) {
   /*Gets the exact position of the ball.*/
@@ -102,10 +105,8 @@ function RightBall() {
 }
 
 /*Reset X/Y Distance Transform Position of Ball on collision.*/
-const obstacle = document.querySelectorAll(
-  "#obs1, #obs2, #obs3, #obs4, #obs5, #obs6, #obs7, #obs8, #obs9, #obs10",
-  ResetPosition
-);
+const obstacle = document.querySelectorAll(".obs", ResetPosition);
+console.log(obstacle);
 
 function ResetPosition() {
   newYDistance = 0;
