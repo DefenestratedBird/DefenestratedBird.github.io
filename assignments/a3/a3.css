@@ -165,11 +165,11 @@ body {
 
 .wall7 {
   position: absolute;
-  width: 105px;
+  width: 80px;
   height: 20px;
 
   top: 0px;
-  left: 290px;
+  left: 315px;
   background-color: rgb(23, 76, 233);
 }
 
