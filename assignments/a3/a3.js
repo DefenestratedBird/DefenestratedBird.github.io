@@ -42,8 +42,20 @@ function checkCollision(newXDistance, newYDistance) {
       /*Then collision is deteced.*/
     }
   }
+  for (let obs of obstacle) {
+    const obsRect = obs.getBoundingClientRect();
+    if (
+      tempBallRect.left < obsRect.right &&
+      tempBallRect.right > obsRect.left &&
+      tempBallRect.top < obsRect.bottom &&
+      tempBallRect.bottom > obsRect.top
+    ) {
+      console.log("The Ball has collide with an obstacle:", obs.id);
+      ResetPosition();
+      return true;
+    }
+  }
   return false;
-  /*Then collision is not deteced.*/
 }
 
 /*Up Button Move*/
@@ -108,8 +120,12 @@ function RightBall() {
 const obstacle = document.querySelectorAll(".obs", ResetPosition);
 console.log(obstacle);
 
+let startTop = "325px";
+let startLeft = "12px";
+
 function ResetPosition() {
-  newYDistance = 0;
-  newXDistance = 0;
+  YDistance = 0;
+  XDistance = 0;
   UpdateBallPosition();
+  console.log(ball.style.transform);
 }

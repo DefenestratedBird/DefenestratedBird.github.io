@@ -102,9 +102,11 @@ body {
   transition: transform 0.3s ease-out;
 }
 
-#wall1 {
-  background-color: aqua;
+.wall {
+  background-color: rgb(28, 19, 1);
+}
 
+#wall1 {
   position: absolute;
   top: 291px;
   left: 60px;
@@ -114,7 +116,6 @@ body {
 }
 
 #wall2 {
-  background-color: rgb(8, 40, 40);
   position: absolute;
   width: 60px;
   height: 60px;
@@ -130,7 +131,6 @@ body {
 
   top: 215px;
   left: 60px;
-  background-color: brown;
 }
 
 #wall4 {
@@ -140,7 +140,6 @@ body {
 
   top: 145px;
   left: 125px;
-  background-color: royalblue;
 }
 
 #wall5 {
@@ -150,7 +149,6 @@ body {
 
   top: 101px;
   left: 265px;
-  background-color: rgb(23, 233, 68);
 }
 
 #wall6 {
@@ -160,7 +158,6 @@ body {
 
   top: 67px;
   left: 165px;
-  background-color: rgb(219, 233, 23);
 }
 
 #wall7 {
@@ -170,7 +167,6 @@ body {
 
   top: 0px;
   left: 320px;
-  background-color: rgb(23, 76, 233);
 }
 
 #wall8 {
@@ -180,7 +176,6 @@ body {
 
   top: 20px;
   left: 380px;
-  background-color: rgb(163, 23, 233);
 }
 
 #wall9 {
@@ -190,7 +185,6 @@ body {
 
   top: 0px;
   left: 474px;
-  background-color: rgb(13, 60, 22);
 }
 
 #wall10 {
@@ -200,5 +194,17 @@ body {
 
   top: 360px;
   left: 438px;
-  background-color: rgb(60, 13, 28);
+}
+
+/*Below is my obstacles.*/
+/*.obs{}*/
+
+#obs1 {
+  position: absolute;
+  width: 35px;
+  height: 10px;
+
+  top: 320px;
+  left: 175px;
+  background-color: red;
 }
