@@ -197,7 +197,9 @@ body {
 }
 
 /*Below is my obstacles.*/
-/*.obs{}*/
+.obs {
+  background-color: red;
+}
 
 #obs1 {
   position: absolute;
@@ -206,7 +208,6 @@ body {
 
   top: 325px;
   left: 175px;
-  background-color: red;
 }
 
 #obs2 {
@@ -216,7 +217,6 @@ body {
 
   top: 251px;
   left: 230px;
-  background-color: rgb(0, 255, 26);
 }
 
 #obs3 {
@@ -226,7 +226,6 @@ body {
 
   top: 185px;
   left: 175px;
-  background-color: rgb(255, 149, 0);
 }
 
 #obs4 {
@@ -236,7 +235,6 @@ body {
 
   top: 101px;
   left: 228px;
-  background-color: red;
 }
 
 #obs5 {
@@ -246,7 +244,6 @@ body {
 
   top: 45px;
   left: 75px;
-  background-color: red;
 }
 
 #obs6 {
@@ -256,7 +253,6 @@ body {
 
   top: 78px;
   left: 280px;
-  background-color: rgb(255, 191, 0);
 }
 
 #obs7 {
@@ -266,7 +262,6 @@ body {
 
   top: 146px;
   left: 320px;
-  background-color: rgb(0, 0, 255);
 }
 
 #obs8 {
@@ -276,7 +271,6 @@ body {
 
   top: 217px;
   left: 280px;
-  background-color: rgb(255, 191, 0);
 }
 
 #obs9 {
@@ -286,7 +280,6 @@ body {
 
   top: 287px;
   left: 320px;
-  background-color: rgb(21, 21, 50);
 }
 
 #obs10 {
@@ -296,7 +289,6 @@ body {
 
   top: 371px;
   left: 280px;
-  background-color: rgb(47, 39, 14);
 }
 
 #obs11 {
@@ -306,7 +298,6 @@ body {
 
   top: 267px;
   left: 395px;
-  background-color: rgb(49, 153, 139);
 }
 
 #obs12 {
@@ -316,7 +307,6 @@ body {
 
   top: 199px;
   left: 433px;
-  background-color: rgb(23, 23, 185);
 }
 
 #obs13 {
@@ -326,7 +316,6 @@ body {
 
   top: 128px;
   left: 395px;
-  background-color: rgb(0, 255, 102);
 }
 
 #obs14 {
@@ -336,5 +325,4 @@ body {
 
   top: 43px;
   left: 433px;
-  background-color: rgb(142, 34, 191);
 }
