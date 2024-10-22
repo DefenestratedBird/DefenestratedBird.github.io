@@ -68,7 +68,7 @@ let newYDistance = 0;
 let newXDistance = 0;
 
 function UpwardsBall() {
-  let newYDistance = YDistance - 36;
+  let newYDistance = YDistance - 35;
   if (YDistance > -300 && !checkCollision(XDistance, newYDistance)) {
     YDistance = newYDistance;
     UpdateBallPosition();
