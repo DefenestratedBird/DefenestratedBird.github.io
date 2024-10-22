@@ -301,7 +301,7 @@ body {
 
 #obs11 {
   position: absolute;
-  width: 40px;
+  width: 36px;
   height: 20px;
 
   top: 267px;
@@ -311,27 +311,17 @@ body {
 
 #obs12 {
   position: absolute;
-  width: 43px;
+  width: 41px;
   height: 20px;
 
   top: 199px;
-  left: 431px;
-  background-color: rgb(12, 12, 150);
-}
-
-#obs12 {
-  position: absolute;
-  width: 43px;
-  height: 20px;
-
-  top: 199px;
-  left: 431px;
-  background-color: rgb(12, 12, 150);
+  left: 433px;
+  background-color: rgb(23, 23, 185);
 }
 
 #obs13 {
   position: absolute;
-  width: 43px;
+  width: 36px;
   height: 20px;
 
   top: 128px;
@@ -341,10 +331,10 @@ body {
 
 #obs14 {
   position: absolute;
-  width: 43px;
+  width: 41px;
   height: 37px;
 
   top: 43px;
-  left: 431px;
+  left: 433px;
   background-color: rgb(142, 34, 191);
 }
