@@ -238,3 +238,13 @@ body {
   left: 228px;
   background-color: red;
 }
+
+#obs5 {
+  position: absolute;
+  width: 33px;
+  height: 100px;
+
+  top: 36px;
+  left: 70px;
+  background-color: red;
+}
