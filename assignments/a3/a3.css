@@ -6,14 +6,6 @@ body {
   margin: 0;
 }
 
-.Game-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  margin: 15px;
-}
-
 .GameInt {
   display: flex;
   flex-direction: row;
@@ -148,7 +140,7 @@ body {
 #wall4 {
   position: absolute;
   width: 50px;
-  height: 199px;
+  height: 196px;
 
   top: 146px;
   left: 125px;
@@ -225,9 +217,9 @@ body {
 #obs2 {
   position: absolute;
   width: 35px;
-  height: 25px;
+  height: 20px;
 
-  top: 251px;
+  top: 255px;
   left: 230px;
 }
 
