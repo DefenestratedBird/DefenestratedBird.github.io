@@ -93,6 +93,7 @@ body {
   width: 30px;
   height: 30px;
   background-color: rgb(238, 255, 0);
+  border: 1px solid black;
   border-radius: 100px;
 
   position: absolute;
@@ -329,12 +330,17 @@ body {
 
 .collect > img {
   margin: 5px;
-  padding: 2px;
 }
 
 #c1 {
   position: absolute;
   top: 245px;
+  left: 70px;
+}
+
+#c2 {
+  position: absolute;
+  top: 175px;
   left: 70px;
 }
 

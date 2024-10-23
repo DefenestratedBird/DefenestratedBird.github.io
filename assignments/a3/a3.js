@@ -12,7 +12,7 @@ let collectables = {
 const Score = document.querySelector("#score");
 
 function updateScore() {
-  Score.textContent = `Highscore: ${score}`;
+  Score.textContent = `Score: ${score}`;
 }
 
 function UpdateBallPosition() {
@@ -89,6 +89,7 @@ function checkCollectCollision() {
       collectables[key].collected = true;
       collectable.style.display = "none";
       updateScore();
+      console.log("You have collected:", [key]);
     }
   }
 }
