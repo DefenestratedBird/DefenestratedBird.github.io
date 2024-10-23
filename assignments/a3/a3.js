@@ -181,9 +181,10 @@ function ResetPosition() {
 
 /*Pop-up Win Menu:*/
 const EndSound = document.querySelector("#endSound");
+const EndText = document.querySelector(".EndText");
+console.log(EndText);
 
 function checkForEnd() {
-  const EndText = document.querySelector(".EndText");
   const ballRect = ball.getBoundingClientRect();
   const EndRect = EndText.getBoundingClientRect();
 
@@ -198,9 +199,10 @@ function checkForEnd() {
 
     // Play the end sound
     EndSound.play();
-  } else {
-    console.error("EndText element not found");
   }
+  /*else {
+    console.error("EndText element not found");
+  }*/
 }
 
 const PlayAgain = document.querySelector("#PlayAgainBtn");
