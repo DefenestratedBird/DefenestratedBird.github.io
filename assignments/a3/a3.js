@@ -1,6 +1,20 @@
 const ball = document.querySelector(".ball");
 console.log(ball);
 
+let score = 0;
+
+let collectables = {
+  c1: { points: 10, collected: false },
+  c2: { points: 10, collected: false },
+  c3: { points: 10, collected: false },
+};
+
+const Score = document.querySelector("#score");
+
+function updateScore() {
+  Score.textContent = `Highscore: ${score}`;
+}
+
 function UpdateBallPosition() {
   ball.style.transform = `translate(${XDistance}px, ${YDistance}px)`;
   /*console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);*/
@@ -58,6 +72,27 @@ function checkCollision(newXDistance, newYDistance) {
   return false;
 }
 
+function checkCollectCollision() {
+  for (let key in collectables) {
+    let collectable = document.querySelector(`#${key}`);
+    let collectRect = collectable.getBoundingClientRect();
+    let ballRect = ball.getBoundingClientRect();
+
+    if (
+      ballRect.right > collectRect.left &&
+      ballRect.left < collectRect.right &&
+      ballRect.bottom > collectRect.top &&
+      ballRect.top < collectRect.bottom &&
+      !collectables[key].collected
+    ) {
+      score += collectables[key].points;
+      collectables[key].collected = true;
+      collectable.style.display = "none";
+      updateScore();
+    }
+  }
+}
+
 /*Up Button Move*/
 const UpButton = document.querySelector("#up");
 console.log(UpButton);
@@ -72,6 +107,7 @@ function UpwardsBall() {
   if (YDistance > -300 && !checkCollision(XDistance, newYDistance)) {
     YDistance = newYDistance;
     UpdateBallPosition();
+    checkCollectCollision();
   }
 }
 
@@ -85,6 +121,7 @@ function DownwardsBall() {
   if (YDistance < 20 && !checkCollision(XDistance, newYDistance)) {
     YDistance = newYDistance;
     UpdateBallPosition();
+    checkCollectCollision();
   }
 }
 
@@ -99,6 +136,7 @@ function LeftBall() {
   if (XDistance > 0 && !checkCollision(newXDistance, YDistance)) {
     XDistance = newXDistance;
     UpdateBallPosition();
+    checkCollectCollision();
   }
 }
 
@@ -111,6 +149,7 @@ function RightBall() {
   if (XDistance < 450 && !checkCollision(newXDistance, YDistance)) {
     XDistance = newXDistance;
     UpdateBallPosition();
+    checkCollectCollision();
   }
 }
 
