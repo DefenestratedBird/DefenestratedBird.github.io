@@ -15,8 +15,8 @@ body {
 }
 
 .arcade {
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 7px;
+  border-radius: 10px;
+  background-color: rgb(31, 31, 31);
 }
 
 /*Below here is the CSS formatting for the controls & High score.*/
@@ -67,6 +67,8 @@ body {
   height: 392px;
   border-radius: 5px;
   position: relative;
+  background-image: url("/assignments/a3/sprites/pokemon-grass.png");
+  object-fit: cover;
 }
 
 .StartText > p {
