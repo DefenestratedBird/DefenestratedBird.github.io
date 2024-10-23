@@ -62,13 +62,19 @@ body {
 
 /*Below this line is going to be the formatting for the maze.*/
 .maze-container {
-  border: 1px solid rgb(0, 255, 42);
   width: 500px;
   height: 392px;
   border-radius: 5px;
   position: relative;
   background-image: url("/assignments/a3/sprites/pokemon-grass.png");
   object-fit: cover;
+}
+
+.GameTitle {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  font-size: 18px;
 }
 
 .StartText > p {
@@ -84,8 +90,8 @@ body {
 #EndText {
   margin: 7px;
   position: absolute;
-  top: 10px;
-  left: 435px;
+  top: 6px;
+  left: 430px;
   z-index: 10;
 }
 
@@ -116,15 +122,15 @@ body {
   left: 60px;
 
   width: 10px;
-  height: 100px;
+  height: 101px;
 }
 
 #wall2 {
   position: absolute;
   width: 60px;
-  height: 54px;
+  height: 52px;
 
-  top: 181px;
+  top: 183px;
   left: 0px;
 }
 
@@ -142,14 +148,14 @@ body {
   width: 50px;
   height: 196px;
 
-  top: 146px;
+  top: 149px;
   left: 125px;
 }
 
 #wall5 {
   position: absolute;
   width: 15px;
-  height: 290px;
+  height: 291px;
 
   top: 101px;
   left: 265px;
@@ -184,7 +190,7 @@ body {
 
 #wall9 {
   position: absolute;
-  width: 25px;
+  width: 26px;
   height: 310px;
 
   top: 0px;
@@ -193,8 +199,8 @@ body {
 
 #wall10 {
   position: absolute;
-  width: 60px;
-  height: 30px;
+  width: 62px;
+  height: 32px;
 
   top: 360px;
   left: 438px;
@@ -252,7 +258,7 @@ body {
 
 #obs6 {
   position: absolute;
-  width: 46px;
+  width: 43px;
   height: 20px;
 
   top: 78px;
@@ -262,9 +268,9 @@ body {
 #obs7 {
   position: absolute;
   width: 60px;
-  height: 25px;
+  height: 22px;
 
-  top: 146px;
+  top: 148px;
   left: 320px;
 }
 
@@ -289,7 +295,7 @@ body {
 #obs10 {
   position: absolute;
   width: 46px;
-  height: 20px;
+  height: 21px;
 
   top: 371px;
   left: 280px;
@@ -306,11 +312,11 @@ body {
 
 #obs12 {
   position: absolute;
-  width: 41px;
+  width: 39px;
   height: 20px;
 
   top: 199px;
-  left: 433px;
+  left: 435px;
 }
 
 #obs13 {
@@ -324,11 +330,11 @@ body {
 
 #obs14 {
   position: absolute;
-  width: 41px;
+  width: 39px;
   height: 37px;
 
   top: 43px;
-  left: 433px;
+  left: 435px;
 }
 
 .collect > img {
