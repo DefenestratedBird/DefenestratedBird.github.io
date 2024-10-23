@@ -7,6 +7,16 @@ let collectables = {
   c1: { points: 10, collected: false },
   c2: { points: 10, collected: false },
   c3: { points: 10, collected: false },
+  c4: { points: 10, collected: false },
+  c5: { points: 10, collected: false },
+  c6: { points: 10, collected: false },
+  c7: { points: 10, collected: false },
+  c8: { points: 10, collected: false },
+  c9: { points: 10, collected: false },
+  c10: { points: 10, collected: false },
+  c11: { points: 10, collected: false },
+  c12: { points: 10, collected: false },
+  c14: { points: 10, collected: false },
 };
 
 const Score = document.querySelector("#score");
