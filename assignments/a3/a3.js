@@ -27,6 +27,7 @@ function updateScore() {
 
 function UpdateBallPosition() {
   ball.style.transform = `translate(${XDistance}px, ${YDistance}px)`;
+  checkForEnd();
   /*console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);*/
 }
 
@@ -176,4 +177,37 @@ function ResetPosition() {
   XDistance = 0;
   UpdateBallPosition();
   console.log(ball.style.transform);
+}
+
+/*Pop-up Win Menu:*/
+const EndSound = document.querySelector("#endSound");
+
+function checkForEnd() {
+  const EndText = document.querySelector(".EndText");
+  const ballRect = ball.getBoundingClientRect();
+  const EndRect = EndText.getBoundingClientRect();
+
+  if (
+    ballRect.top < EndRect.bottom &&
+    ballRect.bottom > EndRect.top &&
+    ballRect.left < EndRect.right &&
+    ballRect.right > EndRect.left
+  ) {
+    // Show the popup menu
+    document.getElementById("#PopupMenu").style.display = "block";
+
+    // Play the end sound
+    EndSound.play();
+  } else {
+    console.error("EndText element not found");
+  }
+}
+
+const PlayAgain = document.querySelector("#PlayAgainBtn");
+console.log(PlayAgain);
+PlayAgain.addEventListener("click", playAgain());
+
+playAgain();
+{
+  location.reload();
 }

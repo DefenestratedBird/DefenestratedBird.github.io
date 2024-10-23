@@ -64,7 +64,7 @@ body {
 .maze-container {
   border: 1px solid rgb(0, 255, 42);
   width: 500px;
-  height: px;
+  height: 392px;
   border-radius: 5px;
   position: relative;
 }
@@ -85,8 +85,8 @@ body {
 
 .EndText {
   position: absolute;
-  top: 0px;
-  left: 425px;
+  top: 10px;
+  left: 435px;
 }
 
 .ball {
@@ -410,4 +410,21 @@ body {
   left: 394px;
 }
 
-/*#c2{}, #c3{], #c4{] and so on, depending on how many collectiables I want.*/
+/*Win Pop-up Menu:*/
+.PopupMenu {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.PopupMenu {
+  cursor: pointer;
+}
