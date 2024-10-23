@@ -27,7 +27,6 @@ function updateScore() {
 
 function UpdateBallPosition() {
   ball.style.transform = `translate(${XDistance}px, ${YDistance}px)`;
-  checkForEnd();
   /*console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);*/
 }
 
@@ -180,36 +179,42 @@ function ResetPosition() {
 }
 
 /*Pop-up Win Menu:*/
-const EndSound = document.querySelector("#endSound");
-const EndText = document.querySelector(".EndText");
-console.log(EndText);
 
-function checkForEnd() {
+function checkEndCollision() {
+  const ball = document.querySelector(".ball");
+  const endText = document.querySelector("#EndText");
+
   const ballRect = ball.getBoundingClientRect();
-  const EndRect = EndText.getBoundingClientRect();
+  const endTextRect = endText.getBoundingClientRect();
 
   if (
-    ballRect.top < EndRect.bottom &&
-    ballRect.bottom > EndRect.top &&
-    ballRect.left < EndRect.right &&
-    ballRect.right > EndRect.left
+    ballRect.x < endTextRect.x + endTextRect.width &&
+    ballRect.x + ballRect.width > endTextRect.x &&
+    ballRect.y < endTextRect.y + endTextRect.height &&
+    ballRect.y + ballRect.height > endTextRect.y
   ) {
-    // Show the popup menu
-    document.getElementById("#PopupMenu").style.display = "block";
-
-    // Play the end sound
-    EndSound.play();
+    // Trigger the popup or whatever you need when colliding
+    showPopup();
   }
-  /*else {
-    console.error("EndText element not found");
-  }*/
+}
+
+setInterval(checkEndCollision, 100);
+function showPopup() {
+  const PopUpMenu = document.querySelector(".PopupMenu");
+  PopUpMenu.style.display = "block";
+  EndSound.play();
 }
 
 const PlayAgain = document.querySelector("#PlayAgainBtn");
+PlayAgain.addEventListener("click", RestartGame);
 console.log(PlayAgain);
-PlayAgain.addEventListener("click", playAgain());
 
-playAgain();
+RestartGame();
 {
   location.reload();
 }
+
+/*const EndSound = document.querySelector("#endSound");
+const EndText = document.querySelector("#EndText");
+console.log(EndText);
+const WinMenu = document.querySelector("#PopupMenu");*/

@@ -79,14 +79,12 @@ body {
   left: 0px;
 }
 
-.EndText > p {
+#EndText {
   margin: 7px;
-}
-
-.EndText {
   position: absolute;
   top: 10px;
   left: 435px;
+  z-index: 10;
 }
 
 .ball {
@@ -422,9 +420,10 @@ body {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  z-index: 9999;
-}
-
-.PopupMenu {
+  z-index: 1000;
   cursor: pointer;
 }
+
+/*.show {
+  display: block;
+}*/
