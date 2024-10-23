@@ -92,7 +92,7 @@ body {
 .ball {
   width: 32px;
   height: 32px;
-  border: 1px solid black;
+  border: 1.5px solid rgb(8, 69, 92);
   border-radius: 100px;
 
   position: absolute;
@@ -100,6 +100,10 @@ body {
   left: 12px;
 
   transition: transform 0.3s ease-out;
+}
+
+.ball > img {
+  border-radius: 100px;
 }
 
 .wall {
