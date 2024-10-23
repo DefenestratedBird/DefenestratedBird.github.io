@@ -207,10 +207,8 @@ function showPopup() {
 
 const PlayAgain = document.querySelector("#PlayAgainBtn");
 PlayAgain.addEventListener("click", RestartGame);
-console.log(PlayAgain);
 
-RestartGame();
-{
+function RestartGame() {
   location.reload();
 }
 
