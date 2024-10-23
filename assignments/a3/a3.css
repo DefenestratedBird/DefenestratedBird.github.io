@@ -326,3 +326,16 @@ body {
   top: 43px;
   left: 433px;
 }
+
+.collect > img {
+  margin: 5px;
+  padding: 2px;
+}
+
+#c1 {
+  position: absolute;
+  top: 245px;
+  left: 70px;
+}
+
+/*#c2{}, #c3{], #c4{] and so on, depending on how many collectiables I want.*/
