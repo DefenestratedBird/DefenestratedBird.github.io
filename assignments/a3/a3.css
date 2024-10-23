@@ -90,17 +90,26 @@ body {
 }
 
 .ball {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(238, 255, 0);
+  width: 32px;
+  height: 32px;
   border: 1px solid black;
   border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   position: absolute;
   top: 325px;
   left: 12px;
 
   transition: transform 0.3s ease-out;
+}
+
+.ball > img {
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
 }
 
 .wall {
