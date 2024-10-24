@@ -129,10 +129,10 @@ body {
   z-index: 3;
 
   position: absolute;
-  top: 325px;
+  top: 349px;
   left: 12px;
 
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .ball > img {
@@ -236,8 +236,9 @@ body {
 }
 
 /*Below is my obstacles.*/
+
 .obs {
-  background-color: red;
+  z-index: 2;
 }
 
 #obs1 {
@@ -270,7 +271,7 @@ body {
 #obs4 {
   position: absolute;
   width: 37px;
-  height: 39px;
+  height: 37px;
 
   top: 101px;
   left: 228px;
