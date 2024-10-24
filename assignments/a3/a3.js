@@ -115,7 +115,7 @@ let newXDistance = 0;
 
 function UpwardsBall() {
   let newYDistance = YDistance - 35;
-  if (YDistance > -300 && !checkCollision(XDistance, newYDistance)) {
+  if (YDistance > -320 && !checkCollision(XDistance, newYDistance)) {
     YDistance = newYDistance;
     UpdateBallPosition();
     checkCollectCollision();
@@ -129,7 +129,7 @@ DownButton.addEventListener("click", DownwardsBall);
 
 function DownwardsBall() {
   let newYDistance = YDistance + 35;
-  if (YDistance < 20 && !checkCollision(XDistance, newYDistance)) {
+  if (YDistance < -1 && !checkCollision(XDistance, newYDistance)) {
     YDistance = newYDistance;
     UpdateBallPosition();
     checkCollectCollision();
