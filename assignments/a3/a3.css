@@ -79,21 +79,24 @@ body {
 
 .StartText > p {
   margin: 7px;
+  font-size: 12.5px;
+  z-index: 1;
 }
 
 .StartText {
   position: absolute;
-  top: 355px;
-  left: 0px;
+  top: 353px;
+  left: 5px;
+  z-index: 1;
 }
 
 .StartBackground {
   position: absolute;
-  top: 350px;
-  left: 2px;
+  top: 345px;
+  left: -1px;
   height: 41px;
-  width: 57px;
-  border: 1px solid red;
+  width: 65px;
+  z-index: 0px;
 }
 
 #EndText {
@@ -109,6 +112,7 @@ body {
   height: 32px;
   border: 1.5px solid rgb(8, 69, 92);
   border-radius: 100px;
+  z-index: 3;
 
   position: absolute;
   top: 325px;
@@ -119,6 +123,7 @@ body {
 
 .ball > img {
   border-radius: 100px;
+  z-index: 4;
 }
 
 .wall {
@@ -346,8 +351,13 @@ body {
   left: 435px;
 }
 
+.collect {
+  z-index: 5;
+}
+
 .collect > img {
   margin: 5px;
+  z-index: 5;
 }
 
 #c1 {
