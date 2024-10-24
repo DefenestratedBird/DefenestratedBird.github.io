@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assignments/a2/rest.css" />
     <link rel="stylesheet" href="/assignments/a3/a3.css" />
     <script src="/assignments/a3/a3.js" defer></script>
@@ -220,6 +224,10 @@
               alt="Hole 14"
             />
           </div>
+          <audio
+            id="HamDeathSound"
+            src="/assignments/a3/sounds/704608__matrixxx__super-cute-scream-lil-cuzs-dont-change-it-scream-04.wav"
+          ></audio>
           <!--Going to try and implement collectiables below here.-->
           <img
             class="collect"
@@ -339,6 +347,10 @@
             height="30"
           />
         </div>
+        <audio
+          id="CollectSound"
+          src="/assignments/a3/sounds/658270__matrixxx__retro-spare-or-eat-cute-creature.wav"
+        ></audio>
         <div class="game-controls">
           <div class="score" id="score">Cherries Collected:</div>
           <div class="controllers">
@@ -398,7 +410,10 @@
         Congratulations! You and Hamlet have made it to the end!
       </p>
       <button id="PlayAgainBtn">Play Again?</button>
-      <!--<audio id="endSound" src="#"></audio>-->
+      <audio
+        id="endSound"
+        src="/assignments/a3/sounds/430925__higgs01__yipee.wav"
+      ></audio>
     </div>
   </body>
 </html>

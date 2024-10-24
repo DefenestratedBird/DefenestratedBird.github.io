@@ -36,6 +36,7 @@ function UpdateBallPosition() {
 
 const walls = document.querySelectorAll(".wall");
 console.log(walls);
+const HamDying = document.querySelector("#HamDeathSound");
 
 function checkCollision(newXDistance, newYDistance) {
   /*Gets the exact position of the ball.*/
@@ -76,11 +77,15 @@ function checkCollision(newXDistance, newYDistance) {
     ) {
       console.log("The Ball has collide with an obstacle:", obs.id);
       ResetPosition();
+      HamDying.play();
+      HamDying.loop = false;
       return true;
     }
   }
   return false;
 }
+
+const CollectableSound = document.querySelector("#CollectSound");
 
 function checkCollectCollision() {
   for (let key in collectables) {
@@ -99,6 +104,8 @@ function checkCollectCollision() {
       collectables[key].collected = true;
       collectable.style.display = "none";
       updateScore();
+      CollectableSound.play();
+      CollectableSound.loop = false;
       console.log("You have collected:", [key]);
     }
   }
@@ -193,10 +200,11 @@ function checkEndCollision() {
     ballRect.y < endTextRect.y + endTextRect.height &&
     ballRect.y + ballRect.height > endTextRect.y
   ) {
-    // Trigger the popup or whatever you need when colliding
     showPopup();
   }
 }
+
+const EndSound = document.querySelector("#endSound");
 
 setInterval(checkEndCollision, 100);
 function showPopup() {
@@ -211,8 +219,3 @@ PlayAgain.addEventListener("click", RestartGame);
 function RestartGame() {
   location.reload();
 }
-
-/*const EndSound = document.querySelector("#endSound");
-const EndText = document.querySelector("#EndText");
-console.log(EndText);
-const WinMenu = document.querySelector("#PopupMenu");*/
