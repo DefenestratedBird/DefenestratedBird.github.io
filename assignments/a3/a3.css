@@ -116,6 +116,10 @@ body {
   background-color: rgb(28, 19, 1);
 }
 
+.wall > img {
+  object-fit: contain;
+}
+
 #wall1 {
   position: absolute;
   top: 291px;
