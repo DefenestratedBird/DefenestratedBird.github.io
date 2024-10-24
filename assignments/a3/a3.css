@@ -83,8 +83,17 @@ body {
 
 .StartText {
   position: absolute;
-  top: 360px;
+  top: 355px;
   left: 0px;
+}
+
+.StartBackground {
+  position: absolute;
+  top: 350px;
+  left: 2px;
+  height: 41px;
+  width: 57px;
+  border: 1px solid red;
 }
 
 #EndText {
@@ -113,11 +122,7 @@ body {
 }
 
 .wall {
-  background-color: rgb(28, 19, 1);
-}
-
-.wall > img {
-  object-fit: contain;
+  background-color: rgb(37, 108, 88);
 }
 
 #wall1 {
