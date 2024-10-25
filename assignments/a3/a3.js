@@ -3,6 +3,21 @@ console.log(ball);
 
 let score = 0;
 
+/*So since my context is a game, I wanted to implement some form of collectible that the user can collect
+in the game. This adds a sort of gamification to "Hamlet's Labyrinth" maze game. In terms of elaborating
+this feature in a broader scope for a future project, I would like to have different collectables of
+different point values situated in different areas of the maze. I feel that doing this will provide more 
+user replayability, and a challenge for users to better their score.*/
+
+/*In general, if I had more time, I would've liked to make the obstacles move and the user avoid the 
+obstacles. This would overall make the game more rewarding and funnier to play, but the potential challenge
+that I can see occurring is getting the CSS Obs translate movements to work with the 
+"const obsRect = obs.getBoundingClientRect();" collision code.*/
+
+/*Other stretch goals if I were to develop this into a full scale game, is to have Hamlet to be a dynamic sprite
+with a head and a body. And have the head be positioned in the direction of where the player is going. I also 
+would like dynamic death animations, eating cherry animations to trigger when the user hits the collectables 
+& the obstacles. */
 let collectables = {
   c1: { points: 1, collected: false },
   c2: { points: 1, collected: false },
@@ -27,12 +42,7 @@ function updateScore() {
 
 function UpdateBallPosition() {
   ball.style.transform = `translate(${XDistance}px, ${YDistance}px)`;
-  /*console.log(`translateX(${XDistance}px), translateY(${YDistance}px)`);*/
 }
-
-// const walls = document.querySelectorAll(
-//   "#wall1, #wall2, #wall3, #wall4, #wall5, #wall6, #wall7, #wall8, #wall9, #wall10"
-// );
 
 const walls = document.querySelectorAll(".wall");
 console.log(walls);
@@ -78,12 +88,15 @@ function checkCollision(newXDistance, newYDistance) {
       console.log("The Ball has collide with an obstacle:", obs.id);
       ResetPosition();
       HamDying.play();
-      HamDying.loop = false;
       return true;
     }
   }
   return false;
 }
+
+/*The HamDying sound is there, because there's no actual game consequence for the user
+when they hit an obstacle apart from them getting reset to the start. So the Ham Dying sound
+is there to make the users feel bad when they make Ham fall down the holes/"hit the obstacles".*/
 
 const CollectableSound = document.querySelector("#CollectSound");
 
@@ -105,11 +118,16 @@ function checkCollectCollision() {
       collectable.style.display = "none";
       updateScore();
       CollectableSound.play();
-      CollectableSound.loop = false;
+      /*You see this audio feedback above, it adds personality to Hamlet the hamster, when
+      he eats/collects a cherry.*/
       console.log("You have collected:", [key]);
     }
   }
 }
+
+/*Did not end up adding audio feedback to the arrow keys, because I felt that having constant
+audio feedback when the user clicks on the buttons to navigate through the maze will get quite
+repetitive after a while.*/
 
 /*Up Button Move*/
 const UpButton = document.querySelector("#up");
@@ -186,7 +204,6 @@ function ResetPosition() {
 }
 
 /*Pop-up Win Menu:*/
-
 function checkEndCollision() {
   const ball = document.querySelector(".ball");
   const endText = document.querySelector("#EndText");
@@ -211,6 +228,7 @@ function showPopup() {
   const PopUpMenu = document.querySelector(".PopupMenu");
   PopUpMenu.style.display = "block";
   EndSound.play();
+  /*Every good game deserves a triumphant you've won sound. */
 }
 
 const PlayAgain = document.querySelector("#PlayAgainBtn");

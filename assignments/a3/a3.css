@@ -50,6 +50,10 @@ p {
   margin: 2px;
 }
 
+/*In terms of user feedback in the CSS scripts, I wanted the Up, down, left and right to 
+animate like an actual button being pressed on when the user clicks on it. I feel that this intimates 
+how buttons actually functions on user input in those actual retro console gameboys.  */
+
 .UpDown {
   display: flex;
   flex-direction: column;
