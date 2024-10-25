@@ -1,10 +1,19 @@
+/*Wanted to keep the body styling & font styling simple because the main focus
+for me for this assignment is the interaction/playability of the game and not the visuals.*/
+
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #f9dadf;
+  gap: 15p;
+}
+
+.GameTitle {
+  margin: 5px;
 }
 
 h1 {
@@ -130,13 +139,6 @@ how buttons actually functions on user input in those actual retro console gameb
   position: relative;
   background-image: url("/assignments/a3/sprites/pokemon-grass.png");
   object-fit: cover;
-}
-
-.GameTitle {
-  position: absolute;
-  top: 10px;
-  left: 150px;
-  font-size: 18px;
 }
 
 .StartText > p {
@@ -561,9 +563,53 @@ how buttons actually functions on user input in those actual retro console gameb
 
   box-shadow: 2px 2px #a81938;
   transition: transform 0.2s, box-shadow 0.2s;
+
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
 }
 
 #PlayAgainBtn:active {
   transform: translateY(5px);
   box-shadow: 0 2px rgba(66, 61, 61, 0.8);
+}
+
+footer > p {
+  color: #c68d7a;
+}
+
+footer {
+  margin-top: 5px;
+  background-color: rgb(31, 31, 31);
+  color: #c68d7a;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Roboto Condensed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.RefLinks {
+  text-decoration: none;
+  color: #f9dadf;
+
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.RefLinks:hover {
+  text-decoration: none;
+  color: #fa2d60;
+
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
 }

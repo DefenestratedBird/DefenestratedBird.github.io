@@ -18,6 +18,7 @@ that I can see occurring is getting the CSS Obs translate movements to work with
 with a head and a body. And have the head be positioned in the direction of where the player is going. I also 
 would like dynamic death animations, eating cherry animations to trigger when the user hits the collectables 
 & the obstacles. */
+
 let collectables = {
   c1: { points: 1, collected: false },
   c2: { points: 1, collected: false },
