@@ -49,8 +49,10 @@ const walls = document.querySelectorAll(".wall");
 console.log(walls);
 const HamDying = document.querySelector("#HamDeathSound");
 
+/*Since my context is a maze game it would make sense to have some sort of wall collision
+as user feedback.*/
 function checkCollision(newXDistance, newYDistance) {
-  /*Gets the exact position of the ball.*/
+  /*Gets the exact left/right/top/bottom positions of the ball.*/
   const ballRect = ball.getBoundingClientRect();
   const tempBallRect = {
     /*Gets the left position side of the ball and adds the distance that the ball is 
@@ -75,7 +77,7 @@ function checkCollision(newXDistance, newYDistance) {
     ) {
       console.log("Collision detected with:", wall.id);
       return true;
-      /*Then collision is deteced.*/
+      /*Then a collision is deteced.*/
     }
   }
   for (let obs of obstacle) {
@@ -127,7 +129,7 @@ function checkCollectCollision() {
 }
 
 /*Did not end up adding audio feedback to the arrow keys, because I felt that having constant
-audio feedback when the user clicks on the buttons to navigate through the maze will get quite
+audio feedback when the user clicks on the arrow buttons to navigate through the maze will get quite
 repetitive after a while.*/
 
 /*Up Button Move*/
@@ -229,7 +231,7 @@ function showPopup() {
   const PopUpMenu = document.querySelector(".PopupMenu");
   PopUpMenu.style.display = "block";
   EndSound.play();
-  /*Every good game deserves a triumphant you've won sound. */
+  /*Every good game deserves a triumphant you've won sound.*/
 }
 
 const PlayAgain = document.querySelector("#PlayAgainBtn");

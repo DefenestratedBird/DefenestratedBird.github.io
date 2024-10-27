@@ -61,7 +61,7 @@ p {
 
 /*In terms of user feedback in the CSS scripts, I wanted the Up, down, left and right to 
 animate like an actual button being pressed on when the user clicks on it. I feel that this intimates 
-how buttons actually functions on user input in those actual retro console gameboys.  */
+how buttons actually functions on user input in those actual retro console gameboys.*/
 
 .UpDown {
   display: flex;
@@ -132,10 +132,19 @@ how buttons actually functions on user input in those actual retro console gameb
 }
 
 /*Below this line is going to be the formatting for the maze.*/
+/*So the reason why I decided to use flex boxes instead of grid boxes, 
+is partially due to the fact that in A1, I used grid boxes and there were
+resizing issues for different devices. Another reason is because flexboxes 
+allowed me more flexibility and customizability in terms of where I wanted 
+to place my walls and obstacles.*/
+
 .maze-container {
   width: 500px;
   height: 392px;
   border-radius: 5px;
+
+  /*The maze-container contains all the walls & obstacles. I have set the position to relative, this
+  makes it so that my walls and obstacles position relative to the maze-container.*/
   position: relative;
   background-image: url("/assignments/a3/sprites/pokemon-grass.png");
   object-fit: cover;
