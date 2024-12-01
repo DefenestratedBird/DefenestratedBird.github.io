@@ -275,29 +275,34 @@ i {
   /*Second column on the top, from left.*/
   grid-row: 6/23;
   grid-column: 2/3;
+  background-color: red;
 }
 
 #box8 {
   /*Third column on the top, from left.*/
   grid-row: 6/20;
   grid-column: 3/4;
+  background-color: orange;
 }
 
 #box9 {
   /*First column on the top, from left.*/
   grid-row: 1/23;
   grid-column: 1/2;
+  background-color: yellow;
 }
 
 #box10 {
   /*Last column on the top, from left.*/
   grid-row: 1/23;
   grid-column: 4/5;
+  background-color: greenyellow;
 }
 
 #box11 {
   grid-row: 14/26;
   grid-column: 1/2;
+  background-color: plum;
 }
 
 .photo-2 {
@@ -316,18 +321,21 @@ i {
   /*First text column from the left, bottom.*/
   grid-row: 13/25;
   grid-column: 2/3;
+  background-color: blue;
 }
 
 #box13 {
   /*Second text column from the left, bottom.*/
   grid-row: 13/25;
   grid-column: 3/4;
+  background: lightskyblue;
 }
 
 #box14 {
   /*Last text column from the left, bottom.*/
   grid-row: 13/25;
   grid-column: 4/5;
+  background-color: chartreuse;
 }
 
 .footer {
