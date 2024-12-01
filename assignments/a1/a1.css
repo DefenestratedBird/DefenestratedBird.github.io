@@ -238,19 +238,17 @@ i {
   text-align: justify;
 }
 /*Below Contains the styling for my gridboxes.*/
-/*article {
-Fuck this its flexbox time.
-  place-items: center;
-  height: 100vh;
-  margin: 0;
-}*/
+.bodyContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 #grid-container-body {
+  margin: 0 auto;
   margin-top: 35px;
-  margin-right: 10px;
-  margin-left: 10px;
-  column-gap: 10rem;
-  width: 100%;
+  width: 940px;
   min-height: 500px;
   display: grid;
   column-gap: 1rem;
@@ -259,7 +257,10 @@ Fuck this its flexbox time.
   grid-template-rows: repeat(2, 725px);
 }
 
-.bodybox1 {
+article {
+  height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
 /*#box6 {
