@@ -24,14 +24,12 @@ body {
 
 #grid-container {
   margin: 0;
-  width: 940px;
+  width: 100;
   height: 165px;
   padding: 10px;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(4, 280px);
-  position: relative;
-  left: -95px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #box1 {
@@ -242,54 +240,29 @@ i {
 /*Below Contains the styling for my gridboxes.*/
 .bodyContent {
   display: flex;
-  align-items: center;
-  width: 100%;
-  flex-flow: column;
+  justify-content: center;
 }
 
 #grid-container-body {
-  margin: 0 auto;
   margin-top: 35px;
-  width: 940px;
+  margin-right: 10px;
+  margin-left: 10px;
+  column-gap: 10rem;
+  width: 100%;
   min-height: 500px;
   display: grid;
   column-gap: 1rem;
   row-gap: 1rem;
+  /*grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;*/
   grid-template-columns: repeat(4, 235px);
-  grid-template-rows: repeat(2, 520px);
-  position: relative;
-  left: -25px;
+  grid-template-rows: repeat(2, 725px);
 }
 
-.bodybox2 > img {
-  width: 490px;
-  height: 300px;
-  object-fit: fill;
+article {
+  height: 100vh;
+  margin: 0;
   position: relative;
-  overflow: hidden;
-}
-
-.bodybox5 > img {
-  width: 260px;
-  height: 300px;
-  object-fit: fill;
-  position: relative;
-  left: -20px;
-  top: 100px;
-}
-
-.Bb3TextBelowImg {
-  position: relative;
-  top: 300px;
-}
-/*.bodybox2 > img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  grid-column: 2/5;
 }
 
 /*#box6 {
@@ -378,21 +351,17 @@ i {
   background-color: chartreuse;
 }*/
 
-footer {
+.footer {
   border-top: 2px solid #252526;
   margin: 10px;
-  width: 1100px;
+  width: 100;
   height: 60px;
-  display: grid;
+  display: flex;
 
   justify-content: center;
   align-items: center;
 
   gap: 10px;
-
-  position: relative;
-  left: 35px;
-  top: 65px;
 }
 
 .back-to-top {
