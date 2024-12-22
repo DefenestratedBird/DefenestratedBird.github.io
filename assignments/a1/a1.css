@@ -3,15 +3,19 @@ had this sort of "pixel art/vintage" art background, so in a similar vein I want
 
 A link will be provided on the website to my Style sheet of all the fonts & colours that I want to use
 Listed Below are my colour palette:
---text: #252526;
---background: #CCC5B4;
+--text: #252528;
+--background: #CCC5B3;
 --primary: #2E506E;
---secondary: #8CD4C3;
---accent: #7CC9BC;*/
+--secondary: #4c5848;
+--accent: #8bd5c4;*/
 
 /* For my CSS styling of Assignment 1, I have tried to go for a newspaper styling as both to make use of the flexbox/gridbox skills
 that were taught to us in class. And also because the https://brooomstick.com/ website reminded me of an acutal magazine,
 so I decided to go for a similar physical media feel assignment 1. */
+
+/*If you are reading, and it is in a professional context, note that the Hex values are 
+slightly differently presented in the code than in the listed Style Sheet. There's not actual
+visualdifference between the different hex codes.*/
 
 body {
   background-color: #ccc5b4;
@@ -282,101 +286,17 @@ i {
   position: relative;
   top: 300px;
 }
-/*.bodybox2 > img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  grid-column: 2/5;
-}
 
-/*#box6 {
-  grid-row: 1/6;
-  grid-column: 2/4;
-}
-
-.photo {
+.HoriLine {
   position: relative;
-  overflow: hidden;
+  top: -535px;
+  left: 0%;
+  right: 0;
+  height: 2px;
+  width: 960px;
+  background-color: #252526;
+  z-index: 100;
 }
-
-.photo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-}
-
-#box7 {
-  /*Second column on the top, from left.
-  grid-row: 6/23;
-  grid-column: 2/3;
-  background-color: red;
-}
-
-#box8 {
-  /*Third column on the top, from left.
-  grid-row: 6/20;
-  grid-column: 3/4;
-  background-color: orange;
-}
-
-#box9 {
-  /*First column on the top, from left.
-  grid-row: 1/23;
-  grid-column: 1/2;
-  background-color: yellow;
-}
-
-#box10 {
-  /*Last column on the top, from left.
-  grid-row: 1/23;
-  grid-column: 4/5;
-  background-color: greenyellow;
-}
-
-#box11 {
-  grid-row: 14/26;
-  grid-column: 1/2;
-  background-color: plum;
-}
-
-.photo-2 {
-  position: relative;
-  overflow: hidden;
-}
-
-.photo-2 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-#box12 {
-  /*First text column from the left, bottom.
-  grid-row: 13/25;
-  grid-column: 2/3;
-  background-color: blue;
-}
-
-#box13 {
-  /*Second text column from the left, bottom.
-  grid-row: 13/25;
-  grid-column: 3/4;
-  background: lightskyblue;
-}
-
-#box14 {
-  /*Last text column from the left, bottom.
-  grid-row: 13/25;
-  grid-column: 4/5;
-  background-color: chartreuse;
-}*/
 
 footer {
   border-top: 2px solid #252526;
@@ -391,8 +311,8 @@ footer {
   gap: 10px;
 
   position: relative;
-  left: 35px;
-  top: 65px;
+  left: 15px;
+  top: 50px;
 }
 
 .back-to-top {
